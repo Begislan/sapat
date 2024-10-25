@@ -1,0 +1,275 @@
+/* contact_from_area */ 
+.consultant_from{
+    background: #fff; 
+    border: 1px solid #e6e6e6;
+    padding: 75px 50px;
+    .form-group{
+        margin-bottom:40px;
+        display: block;  
+        .form-control{
+            box-shadow: none;
+            outline: none; 
+            border: 1px solid #e6e6e6;
+            font: 400 16px/54px $ssp;
+            color: #b5b5b5;
+            background-color: transparent;
+            border-radius: 10px;
+            height: auto;
+            padding: 0 30px;
+            resize: none; 
+            @include placeholder{
+                color: #b5b5b5;
+            }
+            &:focus{
+                border-color: $bc; 
+                @include placeholder{
+                    color: transparent;
+                }
+            }
+        }  
+        .theme_btn{ 
+            min-width: 285px; 
+            box-shadow: none;
+            outline: none;
+            margin-top: 15px;
+            border: 0;
+            line-height: 55px;
+        } 
+    }
+} 
+
+/* stay_tuned_area */
+.stay_tuned_area{
+    display: block;
+    overflow: hidden;
+    background: $bc;
+    padding: 100px 0 90px;
+    .stay_tuned{
+        h2{
+            font: 700 45px/50px $nun;
+            color: #fff;
+        }
+        p{
+            font: 400 18px/20px $ssp;
+            color: #fff;
+            padding-top: 30px;
+        }
+    }
+    .subscribe_area{
+        padding-top: 40px;
+        .input-group{
+            .form-control{
+                box-shadow: none;
+                outline: none; 
+                border: 1px solid #406698;
+                font: 400 16px/68px $ssp;
+                color: #fff;
+                background-color: transparent;
+                border-radius: 45px 0 0 45px; 
+                height: auto;
+                padding: 0 40px;
+                resize: none; 
+                @include placeholder{
+                    color: #fff;
+                }
+                &:focus{
+                    border-color: $hover; 
+                    @include placeholder{
+                        color: transparent;
+                    }
+                }
+            } 
+            .input-group-text{
+                padding: 0;
+                border-radius: 0 45px 45px 0; 
+                min-width: 205px;
+                border: 0;
+                line-height: 68px;
+                cursor: pointer;
+                &:after, &:before{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+.sta_2{
+    background: url("../images/sta-bg.jpg") no-repeat center;
+    background-size: cover;
+    z-index: 1;
+    position: relative;
+    &:after{
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        display: block;
+        background:rgba(4, 65, 146, 0.949);
+        z-index: -1;
+    }
+}
+/* stay_tuned_area */
+ /* say_hello */
+.say_hello{
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    padding: 100px 0 60px;
+    h2{
+        font: 600 42px/45px $nun;
+        color: $bc;
+    }
+    p{
+        font: 400 18px/32px $nun;
+        max-width: 1020px;
+        margin: 0 auto;
+        padding-top: 30px;
+    }
+}
+ /* say_hello */
+
+ /* map_from_area */
+.map_from_area{
+    display: block;
+    overflow: hidden;
+    .map_area{
+        width: calc(50% + 38px);
+        float: left;
+        display: inline-block;
+        #mapBox{
+            height: 620px;
+            width: 100%;
+        }
+    }
+    .contact_inner{ 
+        width: calc(50% - 38px);
+        display: inline-block;
+        float: right; 
+        padding-left: 45px;
+    } 
+    .from_main{ 
+        max-width: 500px; 
+        .form-group{
+            margin-bottom: 30px;
+            .form-control, .post_select{
+                box-shadow: none;
+                outline: none; 
+                border: 0; 
+                background: #f6f6f6;
+                font: 400 16px/60px $ssp;
+                color: $pfont;
+                border-radius: 0;
+                height: auto;
+                padding: 0 25px; 
+                resize: none; 
+                @include placeholder{
+                    color: $pfont;
+                }
+                &:focus{ 
+                    @include placeholder{
+                        color: transparent;
+                    }
+                }
+            }
+            textarea{
+                line-height: 30px !important;
+                height: 225px !important; 
+                position: relative; 
+                margin-top: 54px;
+                padding-top: 30px !important;
+            }
+            .post_select{
+                width: 100%;
+                &:before{
+                    line-height: 60px;
+                    color: #6b6b6b;
+                }
+            }
+            .theme_btn{
+                border: 0;
+                box-shadow: none;
+                outline: none;
+                min-width: 188px;
+                background: $bc;  
+                margin-top: 18px;
+            }
+            &.has-error{
+                .form-control{
+                    border-color: red; 
+                }
+            }
+        }
+    }
+    .fm_2{
+        max-width: initial;
+        padding-top: 100px;
+        .form-group textarea{
+            margin-top: 0;
+        }
+    }
+}
+.mfa_2{
+    .map_area{
+        width: 100%;
+    }
+}
+ /* map_from_area */
+ 
+
+/* Our_office_area */ 
+.our_office_area{
+    padding-top: 100px;
+    padding-bottom: 70px; 
+    .our_office{
+        background: $bc;
+        border-radius: 45px; 
+        font: 400 16px/46px $nun;
+        color: #fff; 
+        padding: 45px 110px;
+        position: relative;
+        z-index: 1;
+        margin-bottom: 30px;
+        &:after{
+            content: "01";
+            font: 700 84px/1 $ssp;
+            color: #0c4a9b;
+            position: absolute;
+            top: 27px;
+            right: 55px;
+            z-index: -1;
+        }
+        span{
+            font-weight: 600;
+            font-size: 20px;
+        } 
+        .email_s{
+            font-size: 18px;
+        }
+    }
+    .of_2{
+        background: $hover; 
+        &:after{ 
+            color: #fbb25c;
+            content: "02";
+        }
+    }
+}
+.our_office_2{
+    padding-top: 100px;
+    .our_office{ 
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 0px 15px 0px rgba(229, 229, 229, 0.75);
+        color: #919090;
+        span{
+            color: $bc;
+        }
+        &:after{
+            color: #f4f4f4;
+        }
+    }
+}
+
+/* End our_office_area */ 
+ 

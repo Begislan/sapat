@@ -1,0 +1,140 @@
+/* Trusted_area */
+.trusted_area{
+    display: block;
+    overflow: hidden;
+    padding: 100px 0 80px;
+    .trusted_content{
+        padding-bottom: 30px;
+        h2{
+            font: 700 45px/52px $nun;
+            color: $bc;
+            span{
+                color: $hover;
+            }
+        } 
+        .fast_p{
+            font: 600 18px/34px $nun;
+            color: $pfont;
+            padding: 45px 0 40px;
+        }
+        .theme_btn{
+            min-width: 200px;
+            line-height: 50px;
+            margin-top: 60px;
+        }
+    }
+    .consultancy{
+        background: $bc; 
+        border-radius: 45px;
+        max-width: 430px;
+        float: right;
+        text-align: center;
+        padding: 75px 30px 65px;
+        color: #fff;
+        h4{
+            font: 700 27px/38px $nun; 
+        }
+        p{
+            font: 400 18px/28px $ssp;
+            color: #fff;
+            padding: 40px 0 60px;
+        } 
+        .theme_btn{
+            min-width: 200px;
+            line-height: 50px; 
+        }
+        h3{
+            font: 700 27px/1 $nun; 
+            padding-top: 50px;
+        }
+    }
+}
+.ta_2{ 
+    .consultancy{
+        float: none;
+    }
+}
+.ta_3{
+    padding: 100px 0 80px;
+}
+/* End Trusted_area */
+
+/* Consultant_area */
+.consultant_area{
+    display: block;
+    overflow: hidden; 
+    position: relative;
+    z-index: 1;
+    &:before{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: url("../images/consultant-bg.jpg") no-repeat left top; 
+        height: 524px;
+        width: 100%;
+        z-index: -1;
+    }
+    &:after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0; 
+        background: rgba(4, 65, 146, 0.902);
+        display: inline-block;
+        height: 524px; 
+        min-width: 1010px;
+        z-index: -1;
+    }
+    .project_sucessfull{
+        padding-top: 90px;
+        padding-right: 50px;
+        .project_items{ 
+            border-radius: 45px;
+            margin-bottom: 30px;
+            padding: 40px 30px;
+            background-color: rgb(255, 255, 255);
+            color: #2d2d2d;
+            text-align: center;
+            max-width: 237px;
+            h4{
+                font: 600 20px/1 $nun; 
+                padding-top: 30px;
+            }
+            h2{
+                font: 700 44px/1 $nun;
+                color: $bc;
+                padding-top: 25px;
+                padding-bottom: 5px;
+            }
+            &.pi_2{
+                background: $bc;
+                color: #fff;
+                h2{
+                    color: #fff;
+                }
+            }
+            &.pi_3{ 
+                box-shadow: 0px 0px 14px 0px rgba(212, 212, 212, 0.75);
+            }
+        }
+    }
+    .request_consulting{
+        padding-left: 15px;
+        background: #fff;
+        h2{
+            font: 700 34px/38px $nun;
+            color: $bc;
+            padding-bottom: 50px;
+        }
+    }
+}
+.coa_2{
+    padding: 100px 0 70px; 
+    background: url("../images/marketting-investment-bg-left.png") no-repeat left center;
+    &:before, &:after{
+        display: none;
+    }
+} 
+/* End consultant_area */
+ 

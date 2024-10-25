@@ -1,0 +1,84 @@
+/* ------------------------------------------------------
+@File: Default Styles
+@Author: Template Mr.
+@Developed By: Emran Khan
+@Developer URL: http://emran-khan.com
+
+This file contains the styling for the actual theme, this
+is the file you need to edit to change the look of the
+theme.
+------------------------------------------------------- */
+
+/* ======================================================
+@Template Name: Gournadi 
+@Author: Template Mr. 
+@Default Styles
+
+Table of Content: 
+01/ Variables
+02/ Prefix
+03/ Header
+04/ Slider
+05/ Marketting
+06/ Services 
+07/ Trusted
+08/ Form
+09/ Causes
+10/ Testimonial
+11/ News
+12/ Appointment
+13/ Faq
+14/ Footer 
+15/ Responsive   
+
+===================================================== */ 
+
+/*----------------------------------------------------*/
+@import "variables";
+/*----------------------------------------------------*/  
+@import "prefix";
+/*----------------------------------------------------*/ 
+@import "header";
+/*----------------------------------------------------*/  
+@import "slider";
+/*----------------------------------------------------*/ 
+@import "marketting";
+/*----------------------------------------------------*/ 
+@import "services";
+/*----------------------------------------------------*/ 
+@import "trusted";
+/*----------------------------------------------------*/
+@import "form";
+/*----------------------------------------------------*/ 
+@import "causes";
+/*----------------------------------------------------*/ 
+@import "testimonial";
+/*----------------------------------------------------*/ 
+@import "news";
+/*----------------------------------------------------*/ 
+@import "appointment";
+/*----------------------------------------------------*/ 
+@import "faq";
+/*----------------------------------------------------*/   
+@import "footer";
+/*----------------------------------------------------*/  
+@import "loder";
+/*----------------------------------------------------*/  
+@import "responsive";
+/*----------------------------------------------------*/     
+
+/*All CSS call*/
+@import "../css/bootstrap.min.css"; /* Bootstrap CSS */
+/* Icon CSS */
+@import "../css/font-awesome.min.css";   
+@import "../vendors/flat-icon/flaticon.css"; 
+/* Extra Plugins CSS */ 
+@import "../vendors/animate-css/animate.css"; 
+@import "../vendors/magnify-popup/magnific-popup.css"; 
+@import "../vendors/bootstrap-selector/nice-select.css";  
+/* Rev slider css */  
+@import "../vendors/revolution/css/settings.css";
+@import "../vendors/revolution/css/layers.css"; 
+@import "../vendors/revolution/css/navigation.css";    
+/* Font family link */
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,400i,600,700,800|Source+Sans+Pro:400,400i,600,700');

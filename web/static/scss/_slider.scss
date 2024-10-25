@@ -1,0 +1,174 @@
+/* Slider Area */
+.main_slider_area{ 
+    margin-top: -140px;
+    #main_slider, #main_slider_2{
+        .concept_title{
+            color: #fff; 
+            font-weight: bold;
+            font-family: $nun !important;
+        } 
+        .ct_2{
+            background-color: rgba(0, 0, 0, 0.2);
+            font-weight: 800 !important;
+            padding: 30px 45px !important;
+        }  
+        .concept_title_right{
+            text-align: right !important;
+        }
+        .slider_sm_heding{
+            color: #fff; 
+            font: 400 20px/30px $ssp !important;
+            letter-spacing: 0.25px !important; 
+        }
+        .get_started_btn{
+            .theme_btn{ 
+                text-align: center !important;
+                min-width: 215px; 
+                display: inline-block;
+                margin-right: 20px;   
+                background: $hover;
+                line-height: 60px;  
+            }
+        }
+         
+        .zeus{ 
+            right: 0;
+            width: 1170px !important;
+            margin: 0 auto;
+            .tp-bullet{ 
+                background: #fff;
+                border: 0;
+                height: 12px;
+                width: 12px;
+                border-radius: 50%; 
+                margin: 0;
+            }
+            .selected{
+                background: $bc !important; 
+                border-color: $bc; 
+                &:after{
+                    background: $bc !important;
+                } 
+            } 
+        }
+        .tp-bannertimer{
+            height: 4px; 
+            background-color: rgba(255, 255, 255, 0.25);
+        }
+    } 
+} 
+.msa_2{
+    margin-top: -226px;
+}
+/* End Slider */   
+
+/* Pages_banner */   
+.pages_banner{
+    display: block;
+    overflow: hidden;
+    background: url("../images/pages-banner.jpg") no-repeat center;
+    background-size: cover;
+    padding-top: 395px;
+    position: relative;
+    z-index: 1;
+    margin-top: -226px;
+    text-align: center;
+    &:after{
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        display: block;
+        background: rgba(0, 20, 46,  0.659);
+        z-index: -1;
+    }
+    h2{
+        text-align: center;
+        display: inline-block;
+        background-color: rgba(0, 0, 0, 0.2);
+        font: 800 65px/65px $nun;
+        color: #fff;
+        padding: 25px 85px;
+    }
+    
+    .breadcrumb{
+        background-color: transparent;   
+        margin: 0; 
+        padding: 125px 0 30px;
+        border-radius: 0; 
+        li{
+            display: inline-block;
+            padding-left: 22px;
+            position: relative;
+            &:after{
+                content: ".";
+                position: absolute;
+                color: #fff;
+                font: 400 18px/30px $nun;
+                top: 0;
+                left: 7px; 
+            }
+            &:first-child{
+                padding: 0;
+                &:after{
+                    display: none;
+                }
+            }
+            a{ 
+                font: 400 18px/30px $nun;
+                color: #fff;
+                &:hover, &:focus, &.active{
+                    color: $hover;
+                }
+            }
+        }
+    }
+}
+/* End pages_banner */  
+
+/* Error_area */  
+.error_area{
+    padding: 100px 0;
+    .error_inner{
+        text-align: center;
+        background: #f9f9f9;
+        padding: 200px 0 170px;
+        h1{
+            font: 800 80px/1 $nun;
+            color: $hover;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            small{
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 1;
+                display: inline-block;
+                padding-top: 10px;
+                padding-left: 10px;
+            }
+        }
+        h2{ 
+            font: 800 58px/1 $nun;
+            color: #044192;
+            padding-top: 30px;
+        }
+        h6{ 
+            font: 400 20px/42px $nun;
+            color: #333;
+            padding-top: 75px;
+            a{
+                color: $bc;
+            }
+            .contact_btn{
+                color: $hover;
+            }
+        }
+    }
+}
+/* End error_area */   
+ 
+
+ 

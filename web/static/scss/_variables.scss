@@ -1,0 +1,129 @@
+/*font Variables*/  
+$nun: 'Nunito', sans-serif;
+$ssp: 'Source Sans Pro', sans-serif; 
+
+/*Color Variables*/ 
+$bc: #044192;
+$hover: #f0a751; 
+$heding: #272727; 
+$pfont: rgba(0, 0, 0, 0.702);
+
+// Mixins
+@mixin transition($property: all, $duration: 300ms, $animate: linear, $delay:0s){
+    transition: $property $duration $animate $delay; 
+}
+
+// Placeholder Mixins
+@mixin placeholder {
+    &.placeholder { @content; }
+    &:-moz-placeholder { @content; }
+    &::-moz-placeholder { @content; }
+    &::-webkit-input-placeholder { @content; }
+}
+
+/* Bottom to Top key frame*/
+@-webkit-keyframes BottomToTop {
+    49% {
+        -webkit-transform : translateY(-100%);
+        }
+    50% {
+        opacity           : 0;
+        -webkit-transform : translateY(100%);
+        }
+    51% {
+        opacity : 1;
+        }
+    }
+@-moz-keyframes BottomToTop {
+    49% {
+        -moz-transform : translateY(-100%);
+        }
+    50% {
+        opacity        : 0;
+        -moz-transform : translateY(100%);
+        }
+    51% {
+        opacity : 1;
+        }
+    }
+@keyframes BottomToTop {
+    49% {
+        transform : translateY(-100%);
+    }
+    50% {
+        opacity   : 0;
+        transform : translateY(100%);
+    }
+    51% {
+        opacity : 1;
+    }
+}
+/* Button Style */
+.theme_btn{ 
+    color: #fff; 
+    background: $hover;
+    text-align: center !important; 
+    font: 600 18px/50px $nun;
+    display: inline-block;
+    padding: 0 20px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px; 
+    z-index: 1; 
+    &:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-color:  rgba(53,62,176,0.8);  
+        transition: all 0.3s; 
+        transform: translate(0,-100%); 
+        transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+    }
+    &:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-color: rgba(53,62,176,0.8); 
+        transition: all 0.3s; 
+        transform: translate(0,-100%); 
+        transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1); 
+        transition-delay: 0.2s;
+    }
+    &:hover, &:focus, &.active{  
+        color: #fff;
+        &:before, &:after{ 
+            transform: translate(0,0);
+        } 
+    }
+}
+/* Tittle */
+.tittle{
+    display: block;
+    overflow: hidden;
+    h2{
+        font: 700 45px/55px $nun;
+        color: $bc;
+        padding-bottom:40px;
+    }
+    p{
+        font: 400 18px/30px $ssp;
+        color: $pfont;
+        display: inline-block;
+        max-width: 920px;
+    }
+    .theme_btn{
+        float: right;
+        min-width: 188px;  
+        background: $hover;
+        margin-top: 8px;
+        line-height: 50px;
+    }
+}

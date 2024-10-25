@@ -1,0 +1,49 @@
+{% extends 'adminka_post/base_adminka.html' %}
+
+{% block title %}Админка{% endblock %}
+
+{% block content %}
+
+    <div class="px-4 py-5 my-5 text-center">
+        <img class="d-block mx-auto mb-4" src="https://img.icons8.com/?size=100&id=XLa4HP4kJj7b&format=png&color=000000"
+             alt="" width="72" height="57">
+        <h3 class="fw-bold text-body-emphasis">Добро пожаловать в админку {{ current_user }}</h3>
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">Сейчас: <span id="date"></span> <span id="time"></span></p>
+
+            <ul class="dropdown-menu position-static d-grid gap-1 p-2 rounded-3 mx-0 shadow w-220px"
+                data-bs-theme="light">
+                <li class="dropdown-item rounded-2">Все посты: {{ posts }}</li>
+                <li class="dropdown-item rounded-2">Все сотрудники: {{ persons }}</li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li class="dropdown-item rounded-2">
+                    <a class="btn btn-outline-secondary  " href="{% url 'all_posts' %}">
+                       Просмотр постов
+                    </a>
+                    <a class="btn btn-outline-secondary  " href="{% url 'persons' %}">
+                        Просмотр сотрудников
+                    </a>
+                </li>
+                <li class="dropdown-item rounded-2">
+
+                </li>
+            </ul>
+            <br>
+        </div>
+    </div>
+
+    <script>
+        function updateDateTime() {
+            const now = new Date();
+            const currentTime = now.toLocaleTimeString(); // Получаем текущее время
+            const currentDate = now.toLocaleDateString(); // Получаем текущую дату
+            document.querySelector('#time').innerHTML = currentTime; // Обновляем элемент с ID time
+            document.querySelector('#date').innerHTML = currentDate; // Обновляем элемент с ID date
+        }
+
+        setInterval(updateDateTime, 1000);
+        updateDateTime();
+    </script>
+{% endblock %}

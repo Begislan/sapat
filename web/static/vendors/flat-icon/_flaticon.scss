@@ -1,0 +1,65 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 13/08/2018 13:39
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-play-button:before { content: "\f100"; }
+.flaticon-one-finger-tap-gesture-of-outlined-hand-symbol:before { content: "\f101"; }
+.flaticon-shopper:before { content: "\f102"; }
+.flaticon-phone-call:before { content: "\f103"; }
+.flaticon-mail:before { content: "\f104"; }
+.flaticon-bill:before { content: "\f105"; }
+.flaticon-check:before { content: "\f106"; }
+.flaticon-placeholder:before { content: "\f107"; }
+.flaticon-coffee-cup:before { content: "\f108"; }
+.flaticon-tax:before { content: "\f109"; }
+.flaticon-paper:before { content: "\f10a"; }
+.flaticon-report:before { content: "\f10b"; }
+.flaticon-comment:before { content: "\f10c"; }
+    
+    $font-Flaticon-play-button: "\f100";
+    $font-Flaticon-one-finger-tap-gesture-of-outlined-hand-symbol: "\f101";
+    $font-Flaticon-shopper: "\f102";
+    $font-Flaticon-phone-call: "\f103";
+    $font-Flaticon-mail: "\f104";
+    $font-Flaticon-bill: "\f105";
+    $font-Flaticon-check: "\f106";
+    $font-Flaticon-placeholder: "\f107";
+    $font-Flaticon-coffee-cup: "\f108";
+    $font-Flaticon-tax: "\f109";
+    $font-Flaticon-paper: "\f10a";
+    $font-Flaticon-report: "\f10b";
+    $font-Flaticon-comment: "\f10c";

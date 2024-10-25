@@ -1,0 +1,364 @@
+/* Causes_area */
+.causes_area{
+    display: block;
+    overflow: hidden;
+    background: url("../images/cause-bg.jpg") no-repeat center bottom;
+    padding: 80px 0 90px;
+    .tittle{
+        padding-bottom: 50px;
+    }
+    .causes{
+        position: relative;
+        transform: perspective(1px) translateZ(0);   
+        transition-duration: 0.3s;
+        margin-bottom: 30px;
+        img{
+            max-width: 100%;
+            transition: all 500ms linear 0s;
+        }
+        .causes_hover{
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            text-align: center;  
+            color: #fff;
+            background-color: rgba(0, 12, 27, 0.82);
+            font: 600 22px/1 $nun;
+            padding-top: 116px;
+            transform: scaleX(0); 
+            transform-origin: 0 50%; 
+            transition-property: transform; 
+            transition-duration: 0.3s; 
+            transition-timing-function: ease-out;
+            i{
+                display: block;
+                width: 41px; 
+                background: $hover;
+                text-align: center;
+                line-height: 41px;
+                font-size: 15px;
+                color: #fff;
+                margin: 0 auto 40px; 
+                &:hover, &:focus{
+                    background: $bc;
+                }
+            }
+        }
+        &:hover, &:focus{
+            .causes_hover{
+                transform: scaleX(1);  
+            }
+        }
+    }
+} 
+.ca_3{
+    padding-bottom: 100px;
+}
+.ca_4{
+    padding: 100px 0 75px; 
+    background: url("../images/cause-bg-2.jpg") no-repeat center bottom;
+    .theme_btn{
+        min-width: auto;
+        margin: 65px auto 0;
+        width: 188px;
+        display: block;
+    }
+}
+/* End causes_area */ 
+
+/* Careers_area */  
+.careers_area{
+    display: block;
+    overflow: hidden;
+    .careers_content{
+        width: calc(50% + 50px);
+        display: inline-block;
+        float: left;
+        background: #044192;
+        padding-top: 65px;
+        padding-bottom: 78px;
+        .careers_text{
+            padding-right: 65px;
+            max-width: 635px;
+            float: right;
+            h2{
+                color: #fff;
+                font: 700 45px/55px $nun; 
+            }
+            h3{
+                color: #fff;
+                font: 700 28px/36px $nun; 
+                padding: 15px 0 60px;
+                max-width: 435px;
+            }
+            .industry{
+                background: #fff;
+                padding: 30px;
+                margin-bottom: 30px;
+                a{
+                    display: block;
+                    font: 600 20px/28px $nun;
+                    color: #3f4041;
+                    &:hover, &:focus{
+                        color: $bc;
+                    }
+                }
+                h6{
+                    font: 600 15px/28px $ssp;
+                    color: $bc;
+                    padding-top: 20px;
+                }
+            }
+            .careers_button{
+                padding: 0 38px; 
+                padding-top: 10px;
+                .theme_btn{
+                    min-width: 100%; 
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .careers_img{
+        width: calc(50% - 50px);
+        display: inline-block;
+        float: right;
+        img{
+            max-width: 100%;
+        }
+    }
+}
+/* End careers_area */  
+
+/* Mission Area */  
+.mission_area{
+    display: block;
+    overflow: hidden; 
+    img{
+        max-width: 100%;
+    }
+    h4{
+        font: 600 22px/40px $nun;
+        color: #171717;
+        padding-top: 15px;
+    } 
+    p{
+        font-size: 18px;
+        padding-top: 10px;
+    }
+    .mission_text{
+        padding-left: 49px;
+        .fast_h{
+            padding-top: 0;
+            padding-bottom: 15px;
+        }
+        .fast_p{
+            padding-bottom: 30px;
+        }
+    }
+    .our_vision{
+        padding-top: 35px;
+        p{
+            max-width: 940px;
+            padding-top: 20px; 
+            padding-bottom: 55px;
+        } 
+    }
+    .conversation_area{
+        padding-top: 100px;
+        .tittle{
+            padding-bottom: 50px;
+            p{
+                max-width: 840px;
+                font: 600 22px/34px $nun;
+                color: #171717;
+            }
+            a{
+                min-width: 250px;
+            }
+        }
+        .conversation{
+            text-align: center;
+            margin-bottom: 30px;
+            .conversation_img{
+                display: block;
+                overflow: hidden;
+                img{
+                    max-width: 100%;
+                    transition: all 500ms linear 0s;
+                }
+            }
+            .conversation_content{ 
+                box-shadow: 0px 0px 18px 0px rgba(216, 216, 216, 0.75);
+                @include transition;
+                a{
+                    display: block;
+                    font: 700 22px/1 $nun;
+                    color: #171717;
+                    padding: 40px 0 10px;
+                    &:hover, &:focus{
+                        color: $hover;
+                    }
+                }
+                h6{
+                    font: 400 16px/1 $nun;
+                    color: $bc;
+                }
+                p{
+                    line-height: 26px;
+                    padding: 25px 0 35px;
+                }
+            }
+            &:hover, &:focus{
+                .conversation_content{
+                    background: $bc;
+                    a{
+                        color: #fff;
+                    }
+                    h6{
+                        color: $hover;
+                    }
+                    p{ 
+                        color: rgba(255, 255, 255, 0.702);
+                    }
+                }
+                .conversation_img img{
+                    transform: scale3D(1.2, 1.2, 1);
+                }
+            }
+        }
+    }
+}
+.ma_2{
+    padding-bottom: 70px;
+}
+/* End Mission Area */
+
+/* cases_isotop Area */  
+.cases_isotop{
+    display: block;
+    overflow: hidden;
+    padding: 100px 0 70px;
+    .cases_filter{
+        background: #e3effe;
+        text-align: center;
+        li{
+            display: inline-block;
+            a{
+                font: 600 20px/60px $nun;
+                color: $bc;
+                display: inline-block;
+                padding: 0 22px;
+                &:hover, &:focus, &.active{
+                    background: $hover;
+                    color: #fff;
+                }
+            }
+            &.active a{
+                background: $hover;
+                color: #fff;
+            }
+        }
+    }
+    .cases_inner{
+        padding-top: 50px;
+        .cases-items{
+            margin-bottom: 30px; 
+            .cases_img{
+                display: block;
+                overflow: hidden;
+                img{
+                    max-width: 100%;
+                    transition: all 500ms linear 0s;
+                }
+            }
+            .cases_content{
+                background: #f4f4f4;
+                padding: 40px 30px 0 30px;
+                text-align: center;
+                a{
+                    font: 600 24px/1 $nun;
+                    color: $hover; 
+                    display: block;
+                    padding-bottom: 20px;
+                    &:hover, &:focus{
+                        color: $bc;
+                    }
+                }
+                p{
+                    line-height: 28px;
+                    padding-bottom: 25px;
+                }
+            }
+            .theme_btn{
+                border-radius: 0;
+                background: #e3effe;
+                color: $bc;
+                line-height: 60px;
+                min-width: 100%;
+                width: 100%;
+                &:hover, &:focus{
+                    color: #fff;
+                }
+            }
+            &:hover{
+                .cases_img img{
+                    transform: scale3D(1.2, 1.2, 1);
+                }
+            }
+        }
+    }
+    .ci_2{
+        .cases-items{ 
+            .cases_img{ 
+                position: relative;
+                transform: perspective(1px) translateZ(0);   
+                transition-duration: 0.3s; 
+                .causes_hover{
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    bottom: 0;
+                    right: 0;
+                    text-align: center;  
+                    color: #fff;
+                    background-color: rgba(0, 12, 27, 0.82);  
+                    transform: scaleX(0); 
+                    transform-origin: 0 50%; 
+                    transition-property: transform; 
+                    transition-duration: 0.3s; 
+                    transition-timing-function: ease-out;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    i{
+                        display: block;
+                        width: 41px; 
+                        background: $hover;
+                        text-align: center;
+                        line-height: 41px;
+                        font-size: 15px;
+                        color: #fff;  
+                        &:hover, &:focus{
+                            background: $bc;
+                        }
+                    }
+                }
+            }
+            
+            &:hover, &:focus{
+                .cases_img .causes_hover{
+                    transform: scaleX(1);  
+                }
+            }
+            .cases_content a{
+                padding: 8px 0 45px;
+            }
+        }
+    }
+}
+/* End cases_isotop Area */  
+ 
+

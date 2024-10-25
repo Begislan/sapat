@@ -1,0 +1,59 @@
+<div class="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary" style="width: 100%;">
+    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <svg class="bi pe-none me-2" width="40" height="32">
+            <use xlink:href="#bootstrap"></use>
+        </svg>
+        <span class="fs-4">Сапат</span>
+    </a>
+    <hr>
+    <ul class="nav nav-pills flex-column mb-auto">
+        <li class="nav-item">
+            <a href="{% url 'admin_core' %}"
+               class="nav-link {% if request.resolver_match.url_name == 'admin_core' %}active {% endif %}"
+               aria-current="page">
+                <svg class="bi pe-none me-2" width="16" height="16">
+                    <use xlink:href="#home"></use>
+                </svg>
+                Главный админка
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="{% url 'all_posts' %}"
+               class="nav-link  {% if request.resolver_match.url_name == 'all_posts' %}active text-white{% endif %}">
+                <svg class="bi pe-none me-2" width="16" height="16">
+                    <use xlink:href="#speedometer2"></use>
+                </svg>
+                Посмотреть все новость
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a href="{% url 'persons' %}"
+               class="nav-link  {% if request.resolver_match.url_name == 'persons' %}active text-white{% endif %}">
+                <svg class="bi pe-none me-2" width="16" height="16">
+                    <use xlink:href="#speedometer2"></use>
+                </svg>
+                Сотрудники
+            </a>
+        </li>
+
+    </ul>
+    <hr>
+    <div class="dropdown">
+        <a href="#" class="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle"
+           data-bs-toggle="dropdown" aria-expanded="false">
+            <strong>{{ user.username }}</strong>
+        </a>
+        <ul class="dropdown-menu text-small shadow">
+            <li><a class="dropdown-item" href="#">New project...</a></li>
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li>
+                <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="{% url 'logout' %}">Выход</a></li>
+        </ul>
+    </div>
+</div>
+
+

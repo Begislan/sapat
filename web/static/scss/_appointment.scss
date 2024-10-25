@@ -1,0 +1,78 @@
+/* Calender_area */
+.calender_area{
+    display: block;
+    overflow: hidden;
+    padding: 100px 0;
+    h2{
+        font: 700 25px/45px $nun;
+        color: $hover;
+        text-align: center;
+        display: block;
+        a{
+            min-width: 106px;
+            font: 600 15px/45px $nun;
+            color: #4598ff;
+            text-align: center;
+            border: 1px solid #d3e6fd;
+            display: inline-block;
+            float: left;
+            &:hover, &:focus{
+                background: $bc;
+                color: #fff;
+            }
+        }
+        .next{
+            float: right;
+        }
+    }
+    .calender_table{
+        margin: 0;
+        margin-top: 40px;
+        thead{
+            background: #d3e6fd;
+            border: 1px solid #e3effe;
+            tr{
+                border: 0;
+                th{
+                    border: 0;
+                    font: 600 18px/75px $nun;
+                    color: #4598ff;
+                    text-align: center;
+                    padding: 0;
+                    width: 166px;
+                }
+            }
+        }
+        tbody{
+            tr{
+                td{ 
+                    font: 600 18px/90px $nun; 
+                    text-align: center;
+                    padding: 0;
+                    border: 1px solid #e3effe;
+                    cursor: pointer;
+                    color: #4598ff;
+                    &:hover, &:focus{ 
+                        background: #e3effe;
+                    }
+                }
+                .bg_t{
+                    background: #e3effe;
+                    position: relative;
+                    span{
+                        position: absolute;
+                        left: -20px;
+                        top: -20px;
+                        font: 400 14px/40px $nun;
+                        color: #fff;
+                        background: $hover;
+                        width: 40px;
+                        border-radius: 50%;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+/* Calender_area */

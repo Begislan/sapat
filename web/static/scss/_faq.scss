@@ -1,0 +1,98 @@
+/* Faq Area */
+.faq_area{
+    display: block;
+    overflow: hidden;
+    padding: 100px 0; 
+    h2{
+        font: 600 22px/36px $nun;
+        color: #333333;
+        position: relative; 
+        text-transform: uppercase;
+        margin-bottom: 40px; 
+        display: inline-block;
+        &:after{
+            content: "";
+            position: absolute;
+            bottom: 10px;
+            right: -40px;
+            height: 1px;
+            width: 32px;
+            background: $hover;
+        }
+    }
+        
+    .faq_accordion{ 
+        .item{ 
+            border: 1px solid #edeaea;
+            margin-bottom: 30px;
+            a{
+                font: 600 16px/30px $nun; 
+                color: $bc;
+                display: block;
+                padding: 9px 28px;
+                padding-left: 55px; 
+                position: relative;
+                &:after{ 
+                    content: "\f0d8";
+                    font: normal normal normal 18px/48px FontAwesome;
+                    color: $bc;
+                    position: absolute;
+                    left: 20px;
+                    top: 0; 
+                }
+                &.collapsed{ 
+                    color: #292929;
+                    &:after{  
+                        color: #292929; 
+                        transform: rotate(180deg); 
+                    }
+                }
+            }
+            .accordion_content{
+                padding: 0 55px 45px;
+                img{
+                    max-width: 100%; 
+                }
+            }
+            p{
+                font: 400 16px/28px $ssp;
+                color: #777777; 
+                padding-bottom: 35px;
+                padding-top: 5px;
+                padding-right: 15px;
+            } 
+        }
+    }
+    .another_question{ 
+        display: block;
+        overflow: hidden;
+        background: $bc;
+        border-radius: 45px;
+        padding: 43px 95px;
+        margin-top: 50px;
+        position: relative;
+        z-index: 1;
+        &:after{
+            content:"\f10c";
+            font-size: 94px; 
+            color: #0f52aa;
+            position: absolute; 
+            right:95px; 
+            bottom: 0px;
+            font-family: "Flaticon";
+            z-index: -1;
+        }
+        h4{
+            color: #fff;
+            font: 500 22px/1 $nun;
+            padding-bottom: 38px;
+        }
+        a{ 
+            border-radius: 15px;
+            font: 600 20px/50px $ssp; 
+            overflow: hidden;
+            min-width: 186px;  
+        }
+    } 
+}
+/* End Faq Area */

@@ -1,0 +1,21 @@
+{% extends 'adminka_post/base_adminka.html' %}
+
+{% block title %}Админка{% endblock %}
+
+{% block content %}
+
+
+<div class="container mt-5">
+    <h1>Создать нового сотрудника</h1>
+
+    <!-- Форма создания сотрудника -->
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}  <!-- Поля формы -->
+        <button type="submit" class="btn btn-success">Создать сотрудника</button>
+    </form>
+
+    <!-- Кнопка возврата к списку сотрудников -->
+    <a href="{% url 'persons' %}" class="btn btn-secondary mt-3">Назад к списку сотрудников</a>
+</div>
+{% endblock %}

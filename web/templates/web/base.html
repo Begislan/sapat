@@ -1,0 +1,202 @@
+{% load static %}
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="{% static 'images/favicon.png' %}" type="image/x-icon"/>
+    <title>Сапат</title>
+
+    <link href="{% static '/css/style.css' %}" rel="stylesheet">
+</head>
+
+
+<!-- Header Top Area -->
+{#    <div class="header_top_area">#}
+{#        <div class="container">#}
+{#            <div class="header_top_inner row m-0">#}
+{#                <div class="right_menu col-lg-6 p-0">#}
+{#                    <ul class="right_nav">#}
+{#                        <li>Сапат </li>#}
+{#                        <li><a href="#" class="shop_btn"><i class="flaticon-shopper"></i> <span>0</span></a></li>#}
+{#                        <li class="dropdown search_dropbown">#}
+{#                            <a class="nav-link dropdown-toggle" href="" role="button" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-search"></i></a>#}
+{#                            <ul class="dropdown-menu">#}
+{#                                <li>#}
+{#                                    <input type="text" placeholder="Search..">#}
+{#                                    <span><i class="fa fa-search"></i></span>#}
+{#                                </li>#}
+{#                            </ul>#}
+{#                        </li>#}
+{#                    </ul>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+<!-- Header Top Area -->
+
+<!-- Header Area -->
+<header class="main_header_area">
+    <div class="container">
+        <div class="header_menu">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="{% url 'index' %}"><img src="{% static 'images/logo.png' %}" alt=""></a>
+                <!-- Small Divice Menu-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar_supported"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+
+                <div class="collapse navbar-collapse navbar_supported">
+                    <ul class="navbar-nav">
+                        <li class="dropdown">
+                            <a class="nav-link dropdown-toggle" href="{% url 'index' %}"
+                               aria-expanded="false">Главная</a>
+                        </li>
+                        <li><a class="nav-link" href="{% url 'about' %}">О нас</a></li>
+                        <li class="dropdown">
+                            <a class="nav-link dropdown-toggle" href="" role="button" data-toggle="dropdown"
+                               aria-expanded="false">Сервис</a>
+{#                            <ul class="dropdown-menu">#}
+{#                                <li><a href="services.html">Turnaround Consulting</a></li>#}
+{#                                <li><a href="services-2.html">Bonds &amp; Commodities</a></li>#}
+{#                                <li><a href="services-details.html">trades And Stoks</a></li>#}
+{#                                <li><a href="services-details.html">Financial Projection</a></li>#}
+{#                                <li><a href="services-details.html">Audit and assurance </a></li>#}
+{#                                <li><a href="services-details.html">Strategic Planning</a></li>#}
+{#                            </ul>#}
+                        </li>
+                        <li class="dropdown">
+                            <a class="nav-link dropdown-toggle" href="" role="button" data-toggle="dropdown"
+                               aria-expanded="false">Страницы</a>
+{#                            <ul class="dropdown-menu">#}
+{#                                <li class="dropdown">#}
+{#                                    <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown"#}
+{#                                       aria-expanded="false">Cases</a>#}
+{#                                    <ul class="dropdown-menu">#}
+{#                                        <li><a href="cases.html">Cases Version 1</a></li>#}
+{#                                        <li><a href="cases-2.html">Cases Version 2</a></li>#}
+{#                                        <li><a href="cases-3.html">Cases Version 3</a></li>#}
+{#                                        <li><a href="cases-details.html">Cases details</a></li>#}
+{#                                    </ul>#}
+{#                                </li>#}
+{#                                <li><a href="appointment.html">Appointment</a></li>#}
+{#                                <li><a href="team.html">Team</a></li>#}
+{#                                <li><a href="faq.html">faq</a></li>#}
+{#                                <li><a href="error.html">Error (404)</a></li>#}
+{#                            </ul>#}
+                        </li>
+                        <li class="dropdown">
+                            <a class="nav-link dropdown-toggle" href="" role="button" data-toggle="dropdown"
+                               aria-expanded="false">Блок</a>
+{#                            <ul class="dropdown-menu">#}
+{#                                <li><a href="blog.html">Blog</a></li>#}
+{#                                <li><a href="blog-details.html">Blog details </a></li>#}
+{#                            </ul>#}
+                        </li>
+                        <li class="dropdown">
+                            <a class="nav-link dropdown-toggle" href="" role="button" data-toggle="dropdown"
+                               aria-expanded="false">Контакт</a>
+{#                            <ul class="dropdown-menu">#}
+{#                                <li><a href="contact.html">Contact us</a></li>#}
+{#                                <li><a href="contact-2.html">Contact us v2 </a></li>#}
+{#                            </ul>#}
+                        </li>
+{#                        <li><a class="theme_btn" href="appointment.html">Appoinment</a></li>#}
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+<!-- Header Area -->
+
+{% block content %}
+{% endblock %}
+
+ <footer class="footer_area">
+        <div class="container">
+            <div class="footer_inner row">
+                <div class="col-lg-4 col-md-6 footer_logo">
+                    <a href="index.html"><img src="images/footer-logo.png" alt=""></a>
+                    <p>Over 20 years of experience we’ll ensure you always get the best guidance. </p>
+                    <a href="#" class="request_free"><i class="fa fa-arrow-right"></i>Request for Free Quote</a>
+                </div>
+                <div class="footer_widget col-lg-3 col-md-6">
+                    <h4>Latest News</h4>
+                    <ul class="news_widget">
+                        <li><a href="blog.html">Business processes are ...</a><span>Novebmer 12, 2018</span></li>
+                        <li><a href="blog.html">Create your own financial ...</a><span>Novebmer 12, 2018</span></li>
+                        <li><a href="blog.html">3 Reasons Your Data...</a><span>Novebmer 12, 2018</span></li>
+                    </ul>
+                </div>
+                <div class="footer_widget col-lg-2 col-md-6">
+                    <h4>Our Quick Focus</h4>
+                    <ul class="footer_nav">
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="services.html">Business Growth</a></li>
+                        <li><a href="services.html">Sustainability</a></li>
+                        <li><a href="services.html">Performance</a></li>
+                        <li><a href="services.html">Advertise</a></li>
+                        <li><a href="services.html">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer_widget col-lg-3 col-md-6 social_widget">
+                    <h4>Social Connection</h4>
+                    <ul class="footer_social">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#" class="pinterest"><i class="fa fa-pinterest"></i></a></li>
+                        <li><a href="#" class="google"><i class="fa fa-google"></i></a></li>
+                        <li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                    <h3><small>Contact us</small>+02 (0) 9292162</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="copy_right">
+            <p>Copyright 2018, All Right Reserved, <a href="#">Template_mr</a></p>
+        </div>
+    </footer>
+    <!-- End Footer Area -->
+
+    <!-- Scroll Top Button -->
+    <button class="scroll-top">
+        <i class="fa fa-angle-double-up"></i>
+    </button>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <span class="loading">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </span>
+    </div>
+
+
+
+<!-- jQuery v3.3.1 -->
+<script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+<!-- Bootstrap v4.0.0 -->
+<script src="{% static 'js/popper.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<!-- Rev slider js -->
+<script src="{% static 'vendors/revolution/js/jquery.themepunch.tools.min.js' %}"></script>
+<script src="{% static 'vendors/revolution/js/jquery.themepunch.revolution.min.js' %}"></script>
+<script src="{% static 'vendors/revolution/js/extensions/revolution.extension.actions.min.js' %}"></script>
+<script src="{% static 'vendors/revolution/js/extensions/revolution.extension.slideanims.min.js' %}"></script>
+<script src="{% static 'vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js' %}"></script>
+<script src="{% static 'vendors/revolution/js/extensions/revolution.extension.navigation.min.js' %}"></script>
+<script src="{% static 'vendors/revolution/js/extensions/revolution.extension.kenburn.min.js' %}"></script>
+<script src="{% static 'vendors/revolution/js/extensions/revolution.extension.video.min.js' %}"></script>
+<!-- Extra Plugin -->
+<script src="{% static 'vendors/animate-css/wow.min.js' %}"></script>
+<script src="{% static 'vendors/counterup/jquery.waypoints.min.js' %}"></script>
+<script src="{% static 'vendors/counterup/jquery.counterup.min.js' %}"></script>
+<!-- Theme js / Custom js -->
+<script src="{% static 'js/theme.js' %}"></script>
+</body>
+</html>

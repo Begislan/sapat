@@ -1,0 +1,66 @@
+/* marketting_investment */
+.marketting_investment{
+    display: block;
+    overflow: hidden;
+    padding: 100px 0;
+    background: url("../images/marketting-investment-bg.png") no-repeat left center;
+    .marketting_feture{
+        width: calc(50% + 185px);
+        float: left;
+        display: inline-block;
+        .investment{
+            float: right;
+            max-width: 770px;
+            padding-top: 140px;
+        }
+    } 
+    .marketting{
+        padding-bottom: 55px;
+        a{
+            display: block;
+            font: 600 22px/1 $nun;
+            color: $heding;
+            &:hover, &:focus{
+                color: $hover;
+            }
+            img{
+                margin-right: 20px;
+            } 
+        }
+        p{
+            font: 400 18px/28px $ssp;
+            color: #6f6f6f;
+            padding-top: 30px;
+            max-width: 315px;
+        }
+    }
+    .marketting_img{ 
+        width: calc(50% - 185px);
+        float: right;
+        text-align: right;
+        padding-left: 30px;
+        padding-bottom: 40px;
+        position: relative;
+        z-index: 1;
+        img{
+            max-width: 100%;
+        }
+        &:after{
+            content: "";
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            top: 160px;
+            background: #044192;
+            display: block; 
+            width: 100%;
+            z-index: -1;
+        }
+    }
+}
+.mi_2{ 
+    background: url("../images/marketting-investment-bg-2.png") no-repeat right center;
+    padding-bottom: 40px;
+    background-size: contain;
+}
+/* marketting_investment */
