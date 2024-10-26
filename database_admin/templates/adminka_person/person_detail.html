@@ -1,0 +1,42 @@
+{% extends 'adminka_post/base_adminka.html' %}
+
+{% block title %}Админка{% endblock %}
+
+{% block content %}
+<div class="row">
+<div class="col">
+     <h1>{{ person.first_name }} {{ person.name }} {% if person.last_name %}{{ person.last_name }}{% endif %}</h1>
+    <p>Специальность: {{ person.speciality }}</p>
+    <p>Факультет: {{ person.faculty }}</p>
+    <p>Кафедра: {{ person.kafedra }}</p>
+
+</div>
+<div class="col">
+    {% if person.img %}
+    <img class="img img-top border" height="500px" src="{{ person.img.url }}" alt="">
+    {% else %}
+        <h1>Нет фогорафии</h1>
+    {% endif %}
+</div>
+</div>
+
+
+    <hr>
+    <!-- Здесь можно добавить любую дополнительную информацию о сотруднике -->
+    <a class="btn btn-warning" href="{% url 'persons' %}">Вернуться к списку сотрудников</a>
+    <a class="btn btn-primary" href="{% url 'edit_person' person.id %}">Изменить</a>
+    <a class="btn btn-danger" href="{% url 'delete_person' person.id %}">Удалить</a>
+
+    <script>
+        function updateDateTime() {
+            const now = new Date();
+            const currentTime = now.toLocaleTimeString(); // Получаем текущее время
+            const currentDate = now.toLocaleDateString(); // Получаем текущую дату
+            document.querySelector('#time').innerHTML = currentTime; // Обновляем элемент с ID time
+            document.querySelector('#date').innerHTML = currentDate; // Обновляем элемент с ID date
+        }
+
+        setInterval(updateDateTime, 1000);
+        updateDateTime();
+    </script>
+{% endblock %}

@@ -1,0 +1,52 @@
+{% extends 'adminka_post/base_adminka.html' %}
+
+{% block title %}Админка{% endblock %}
+
+{% block content %}
+<div class="row">
+<div class="col">
+     <h5>{{ person.first_name }} {{ person.name }} {% if person.last_name %}{{ person.last_name }}{% endif %}</h5>
+    <p>Специальность: {{ person.speciality }}</p>
+    <p>Факультет: {{ person.faculty }}</p>
+    <p>Кафедра: {{ person.kafedra }}</p>
+
+</div>
+
+<div class="col">
+    {% if person.img %}
+    <img class="img img-top border" height="500px" src="{{ person.img.url }}" alt="">
+    {% else %}
+        <h5>Нет фогорафии</h5>
+    {% endif %}
+</div>
+</div>
+    <hr>
+
+<div class="container mt-5">
+    <h5>Редактировать данные сотрудника</h5>
+
+    <!-- Форма редактирования -->
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }} <!-- Отображение формы -->
+        <button type="submit" class="btn btn-success">Сохранить изменения</button>
+    </form>
+
+    <!-- Кнопка возврата к деталям сотрудника -->
+    <a href="{% url 'person_detail' person.id %}" class="btn btn-secondary mt-3">Назад к деталям</a>
+</div>
+
+
+    <script>
+        function updateDateTime() {
+            const now = new Date();
+            const currentTime = now.toLocaleTimeString(); // Получаем текущее время
+            const currentDate = now.toLocaleDateString(); // Получаем текущую дату
+            document.querySelector('#time').innerHTML = currentTime; // Обновляем элемент с ID time
+            document.querySelector('#date').innerHTML = currentDate; // Обновляем элемент с ID date
+        }
+
+        setInterval(updateDateTime, 1000);
+        updateDateTime();
+    </script>
+{% endblock %}

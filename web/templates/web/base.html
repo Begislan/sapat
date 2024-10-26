@@ -53,10 +53,10 @@
                             <a class="nav-link dropdown-toggle" href="{% url 'index' %}"
                                aria-expanded="false">Главная</a>
                         </li>
-                        <li><a class="nav-link" href="{% url 'about' %}">О нас</a></li>
+                        <li><a class="nav-link" href="{% url 'about' %}">Состав</a></li>
                         <li class="dropdown">
-                            <a class="nav-link dropdown-toggle" href="" role="button" data-toggle="dropdown"
-                               aria-expanded="false">Сервис</a>
+                            <a class="nav-link dropdown-toggle" href="{% url 'about_info' %}" role="button"
+                               aria-expanded="false">О нас</a>
 {#                            <ul class="dropdown-menu">#}
 {#                                <li><a href="services.html">Turnaround Consulting</a></li>#}
 {#                                <li><a href="services-2.html">Bonds &amp; Commodities</a></li>#}
@@ -67,8 +67,8 @@
 {#                            </ul>#}
                         </li>
                         <li class="dropdown">
-                            <a class="nav-link dropdown-toggle" href="" role="button" data-toggle="dropdown"
-                               aria-expanded="false">Страницы</a>
+                            <a class="nav-link dropdown-toggle" href="{% url 'news' %}" role="button"
+                               aria-expanded="false">Новости</a>
 {#                            <ul class="dropdown-menu">#}
 {#                                <li class="dropdown">#}
 {#                                    <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown"#}
@@ -87,15 +87,15 @@
 {#                            </ul>#}
                         </li>
                         <li class="dropdown">
-                            <a class="nav-link dropdown-toggle" href="" role="button" data-toggle="dropdown"
-                               aria-expanded="false">Блок</a>
+                            <a class="nav-link dropdown-toggle" href="{% url 'news_detail' %}" role="button"
+                               aria-expanded="false">detailNews</a>
 {#                            <ul class="dropdown-menu">#}
 {#                                <li><a href="blog.html">Blog</a></li>#}
 {#                                <li><a href="blog-details.html">Blog details </a></li>#}
 {#                            </ul>#}
                         </li>
                         <li class="dropdown">
-                            <a class="nav-link dropdown-toggle" href="" role="button" data-toggle="dropdown"
+                            <a class="nav-link dropdown-toggle" href="{% url 'contact' %}" role="button"
                                aria-expanded="false">Контакт</a>
 {#                            <ul class="dropdown-menu">#}
 {#                                <li><a href="contact.html">Contact us</a></li>#}

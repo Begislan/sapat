@@ -1,0 +1,91 @@
+{% extends 'web/base.html' %}
+{% load static %}
+{% block  content %}
+    <section class="pages_banner">
+        <div class="container">
+            <h2>Contact</h2>
+            <ol class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a class="active">Contact</a></li>
+            </ol>
+        </div>
+    </section>
+    <!-- End Pages Banner Area -->
+
+
+    <!-- The About Area -->
+    <section class="say_hello">
+        <div class="container">
+            <h2>Say Hello</h2>
+            <p>We believe the best way deliver a great user experience is by deeply understanding what people want and love. Then deliver the features, messages, and content that are most helpful, relevant and timely. </p>
+        </div>
+    </section>
+    <!-- End The About Area -->
+
+    <!-- Map and From Area -->
+    <section class="map_from_area">
+        <!-- Map Area -->
+        <div class="map_area">
+            <div class="mapBox"
+                data-lat="40.701083"
+                data-lon="-74.1522848"
+                data-zoom="12"
+                data-marker="images/map-marker.png"
+                data-info="16122 Collins Street West Victoria 8007 CA"
+                data-mlat="40.701083"
+                data-mlon="-74.1522848">
+                <img src="https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg)" alt="">
+            </div>
+        </div>
+        <div class="contact_inner">
+            <form class="from_main" action="php/contact.php" method="post" id="phpcontactform" novalidate="novalidate">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" id="message" name="message" placeholder="Your Message"></textarea>
+                </div>
+                <div class="form-group m-0">
+                    <button class="theme_btn btn" id="js-contact-btn" type="submit">Send Request</button>
+                    <div id="js-contact-result" data-success-msg="Form submitted successfully." data-error-msg="Messages Successfully"></div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- End Map and From Area -->
+
+    <!-- Our Office Area -->
+    <section class="our_office_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <address class="our_office">
+                        <span>Our Office</span><br>
+                        1600 Rosecrans Avenue <br>
+                        Manhattan Beach, CA 90266 <br>
+                        (02) 9292162 <br>
+                        <span>E-mail us: help02@gmail.com</span>
+                    </address>
+                </div>
+                <div class="col-md-6">
+                    <address class="our_office of_2">
+                        <span>Our Office</span><br>
+                        12/2 Rosecrans Avenue <br>
+                        Manhattan Beach, CA 90266 <br>
+                        +88 01912704287 <br>
+                        <span>E-mail us: help02@gmail.com</span>
+                    </address>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Our Office Area -->
+
+{% endblock %}

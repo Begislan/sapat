@@ -1,0 +1,170 @@
+{% extends 'adminka_post/base_adminka.html' %}
+
+{% block title %}Создать{% endblock %}
+
+
+
+{% block content %}
+
+    <h1>создать</h1>
+
+{#    <form method="post" enctype="multipart/form-data" class="form-control">#}
+{##}
+{#        {% csrf_token %}#}
+{#        {{ form.as_p }}#}
+{#        <input type="datetime-local" name="created_at" required id="id_created_at">#}
+{#        <h3>Загрузите изображения</h3>#}
+{#        {{ formset.management_form }}#}
+{#        {% for form in formset %}#}
+{#            {{ form.as_p }}#}
+{##}
+{#        {% endfor %}#}
+{##}
+{#        <button type="submit">Сохранить пост с изображениями</button>#}
+{#        <a class="btn btn-warning" href="{% url 'all_posts' %}">Назад</a>#}
+{#    </form>#}
+
+    <p>Текущая дата и время: {{ current_time }}</p>
+
+
+    <form method="post" enctype="multipart/form-data" class="form-control">
+
+        <input type="hidden" name="csrfmiddlewaretoken"
+               value="v1aIe5OjhwkNWDB2Hgt47QtyCnUbyTJsw96yNNMoeDSdsy6RJSCAEPqWY9saidUP">
+        <p>
+            <label for="id_title">Title:</label>
+            <input type="text" name="title" maxlength="200" required="" id="id_title">
+
+
+        </p>
+
+
+        <p>
+            <label for="id_content">Content:</label>
+            <textarea name="content" cols="40" rows="10" required="" id="id_content"></textarea>
+
+
+        </p>
+
+
+        <p>
+            <label for="id_created_at">Created at:</label>
+            <input type="datetime-local" name="created_at" required="" id="id_created_at">
+
+
+        </p>
+        <h3>Загрузите изображения</h3>
+        <input type="hidden" name="form-TOTAL_FORMS" value="10" id="id_form-TOTAL_FORMS"><input type="hidden"
+                                                                                                name="form-INITIAL_FORMS"
+                                                                                                value="0"
+                                                                                                id="id_form-INITIAL_FORMS"><input
+            type="hidden" name="form-MIN_NUM_FORMS" value="0" id="id_form-MIN_NUM_FORMS"><input type="hidden"
+                                                                                                name="form-MAX_NUM_FORMS"
+                                                                                                value="1000"
+                                                                                                id="id_form-MAX_NUM_FORMS">
+
+        <p>
+            <label for="id_form-0-image">Image:</label>
+            <input type="file" name="form-0-image" accept="image/*" id="id_form-0-image">
+
+
+            <input type="hidden" name="form-0-id" id="id_form-0-id">
+
+        </p>
+
+
+        <p>
+            <label for="id_form-1-image">Image:</label>
+            <input type="file" name="form-1-image" accept="image/*" id="id_form-1-image">
+
+
+            <input type="hidden" name="form-1-id" id="id_form-1-id">
+
+        </p>
+
+
+        <p>
+            <label for="id_form-2-image">Image:</label>
+            <input type="file" name="form-2-image" accept="image/*" id="id_form-2-image">
+
+
+            <input type="hidden" name="form-2-id" id="id_form-2-id">
+
+        </p>
+
+
+        <p>
+            <label for="id_form-3-image">Image:</label>
+            <input type="file" name="form-3-image" accept="image/*" id="id_form-3-image">
+
+
+            <input type="hidden" name="form-3-id" id="id_form-3-id">
+
+        </p>
+
+
+        <p>
+            <label for="id_form-4-image">Image:</label>
+            <input type="file" name="form-4-image" accept="image/*" id="id_form-4-image">
+
+
+            <input type="hidden" name="form-4-id" id="id_form-4-id">
+
+        </p>
+
+
+        <p>
+            <label for="id_form-5-image">Image:</label>
+            <input type="file" name="form-5-image" accept="image/*" id="id_form-5-image">
+
+
+            <input type="hidden" name="form-5-id" id="id_form-5-id">
+
+        </p>
+
+
+        <p>
+            <label for="id_form-6-image">Image:</label>
+            <input type="file" name="form-6-image" accept="image/*" id="id_form-6-image">
+
+
+            <input type="hidden" name="form-6-id" id="id_form-6-id">
+
+        </p>
+
+
+        <p>
+            <label for="id_form-7-image">Image:</label>
+            <input type="file" name="form-7-image" accept="image/*" id="id_form-7-image">
+
+
+            <input type="hidden" name="form-7-id" id="id_form-7-id">
+
+        </p>
+
+
+        <p>
+            <label for="id_form-8-image">Image:</label>
+            <input type="file" name="form-8-image" accept="image/*" id="id_form-8-image">
+
+
+            <input type="hidden" name="form-8-id" id="id_form-8-id">
+
+        </p>
+
+
+        <p>
+            <label for="id_form-9-image">Image:</label>
+            <input type="file" name="form-9-image" accept="image/*" id="id_form-9-image">
+
+
+            <input type="hidden" name="form-9-id" id="id_form-9-id">
+
+        </p>
+
+
+        <button type="submit">Сохранить пост с изображениями</button>
+        <a class="btn btn-warning" href="/admsapat/all_posts/">Назад</a>
+    </form>
+
+{% endblock %}
