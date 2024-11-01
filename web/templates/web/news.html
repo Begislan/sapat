@@ -5,113 +5,62 @@
     <!-- Pages Banner Area -->
     <section class="pages_banner">
         <div class="container">
-            <h2>Cases v2</h2>
+            <h2>Новости и блоги</h2>
             <ol class="breadcrumb">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Pages</a></li>
-                <li><a class="active">Cases v2</a></li>
             </ol>
         </div>
     </section>
     <!-- End Pages Banner Area -->
 
-  <section class="services_details_area">
+    <section class="services_details_area">
         <div class="container">
             <div class="row">
-                <div class="col-lg-9 blog_list">
-                    <div class="blog_items">
-                        <a href="blog-details.html" class="blog_heding m-0">UK Power Reserved sold to Sembcorp for £216 million</a>
-                        <img src="images/blog-list-1.jpg" alt="">
-                        <h6>July 29, 2018  <a href="#">By  : Emran Khan</a>  Comment  ( 07 )</h6>
-                        <p>Global research and advisory firm MarketsandMarkets has clapped eyes on “off-the-shelf, readily available research on next-generation high-growth use cases and technologies, which will impact the future revenues of companies,” says CEO Sandeep Sugla</p>
-                        <a href="blog-details.html" class="read_more">Read More</a>
-                    </div>
-                    <div class="blog_items">
-                        <a href="blog-details.html" class="blog_heding">Indian firms deeply concerned about rising protectionism, says HSBC</a>
-                        <img src="images/blog-list-2.jpg" alt="">
-                        <h6>July 29, 2018  <a href="#">By  : Emran Khan</a>  Comment  ( 07 )</h6>
-                        <p>HSBC’s global survey ‘Navigator: Now, next and how for business’, covering 6000 companies in 26 markets, has found that firms in India are most concerned about rising protectionism across the world. he survey data shows that almost nine in 10 businesses in India feel that governments are</p>
-                        <a href="blog-details.html" class="read_more">Read More</a>
-                    </div>
-                    <div class="blog_items">
-                        <a href="blog-details.html" class="blog_heding">Wait at least six months until you write a business plan</a>
-                        <img src="images/blog-list-3.jpg" alt="">
-                        <h6>July 29, 2018  <a href="#">By  : Emran Khan</a>  Comment  ( 07 )</h6>
-                        <p>Mohammed Fathy, General Manager of Dubai-based tax consultancy Al Dhaheri Jones & Clark, explains its long-term effect on the region’s sectors and GDP percentage  which will impact the future revenues of companies,” says CEO Sandeep Sugla</p>
-                        <a href="blog-details.html" class="read_more">Read More</a>
-                    </div>
-                    <div class="blog_items">
-                        <a href="blog-details.html" class="blog_heding">FCA announces new proposals to protect millions using overdrafts and high-cost credit</a>
-                        <img src="images/blog-list-4.jpg" alt="">
-                        <h6>July 29, 2018  <a href="#">By  : Emran Khan</a>  Comment  ( 07 )</h6>
-                        <p>These changes are wide-ranging and some specific proposals are being consulted on. In addition, the FCA will gather additional evidence and carry out further analysis before any formal decisions can be made on a number of other issues</p>
-                        <a href="blog-details.html" class="read_more">Read More</a>
-                    </div>
-                    <nav class="pagination_area">
-                        <ul class="pagination">
-                            <li class="page-item disabled"><a class="page-link active" href="#" tabindex="-1">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item"><a class="page-link" href="#">4</a></li>
-                            <li class="page-item"><a class="page-link" href="#"><i class="fa fa-arrow-right"></i></a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="col-xl-3 left_sidebar">
-                     <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search">
+                <div class="col-lg-12 blog_list">
+
+                <form method="get" action="{% url 'news' %}">
+                    <div class="input-group mb-3">
+                        <input type="text" name="search" class="form-control" placeholder="Поиск" value="{{ query }}">
                         <div class="input-group-append">
-                            <span class="input-group-text"><i class="fa fa-arrow-right"></i></span>
+                            <button class="btn btn-outline-secondary" type="submit">Поиск</button>
                         </div>
                     </div>
-                   <!-- Widget -->
-                   <div class="widget">
-                       <ul class="target">
-                           <li><a href="#" class="active">Business  <span>(09)</span></a></li>
-                           <li><a href="#">Consutruction<span>(08)</span></a></li>
-                           <li><a href="#">Marketing<span>(07)</span></a></li>
-                           <li><a href="#">Performance<span>(06)</span></a></li>
-                           <li><a href="#">Office<span>(05)</span></a></li>
-                           <li><a href="#">Corporate Finance<span>(04)</span></a></li>
-                       </ul>
-                   </div>
-                   <!-- Widget -->
-                   <div class="widget key">
-                       <h4>Key Contacts</h4>
-                       <ul>
-                           <li>
-                               <a href="#" class="active">Steven J. Joffe</a>
-                               <h6>Senior Managing Director</h6>
-                           </li>
-                           <li>
-                               <a href="#">Larry Portal</a>
-                               <h6>Senior Managing Director</h6>
-                           </li>
-                       </ul>
-                   </div>
-                   <!-- Widget -->
-                   <div class="widget">
-                       <ul class="target download">
-                           <li><a href="#">January 2018</a></li>
-                           <li><a href="#">December 2017</a></li>
-                           <li><a href="#">December 2016</a></li>
-                       </ul>
-                   </div>
-                   <!-- Quick contact -->
-                   <div class="quick_contact_widget">
-                       <h6>Corporate Finance</h6>
-                       <h3>Need Help?</h3>
-                       <address>
-                            562, Mallin Street, New York, NY 100 254 <br>
-                            Phone : +1800-456-7890 <br>
-                            Email : contact@wellinor.com
-                       </address>
-                       <a href="contact.html" class="theme_btn">Contact Us</a>
-                   </div>
+                </form>
+
+                    {% for post in page_obj %}
+                        <div class="blog_items">
+                            <a href="{% url 'news_detail' post.id %}" class="blog_heding">{{ post.title }}</a>
+                            <img src="{{ post.image.url }}" alt="">
+                            <h6>{{ post.created_at|date:"d M Y" }}
+                                <p>{{ post.excerpt }}</p>
+                                <a href="{% url 'news_detail' post.id %}" class="read_more">Read More</a>
+                            </h6>
+                        </div>
+                    {% endfor %}
+
+                     <nav class="pagination_area">
+                    <ul class="pagination">
+                        {% if page_obj.has_previous %}
+                            <li class="page-item">
+                                <a class="page-link" href="?page={{ page_obj.previous_page_number }}&search={{ query }}" tabindex="-1">&laquo;</a>
+                            </li>
+                        {% endif %}
+                        {% for num in page_obj.paginator.page_range %}
+                            <li class="page-item {% if page_obj.number == num %}active{% endif %}">
+                                <a class="page-link" href="?page={{ num }}&search={{ query }}">{{ num }}</a>
+                            </li>
+                        {% endfor %}
+                        {% if page_obj.has_next %}
+                            <li class="page-item">
+                                <a class="page-link" href="?page={{ page_obj.next_page_number }}&search={{ query }}">&raquo;</a>
+                            </li>
+                        {% endif %}
+                    </ul>
+                </nav>
                 </div>
             </div>
         </div>
     </section>
+
 
 
 {% endblock %}

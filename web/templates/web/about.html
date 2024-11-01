@@ -4,7 +4,7 @@
 
 
     <!-- Pages Banner Area --> 
-    <section class="pages_banner" style="background: none">
+    <section class="pages_banner" >
         <div class="container">
             <h2>Состав отдела</h2>
             <ol class="breadcrumb">
@@ -14,14 +14,14 @@
     <!-- End Pages Banner Area -->
 
 
-br
+    <br>
 {#    <!-- Mission Area -->#}
     <section class="mission_area">
         <div class="container">
             <div class="row mission">
-                <div class="col-lg-5"><img src="{% static 'images/mission.jpg' %}" alt=""></div>
+                <div class="col-lg-5"><img src="http://127.0.0.1:8000/media/images/%D0%91%D0%B5%D0%B7_%D0%B8%D0%BC%D0%B5%D0%BD%D0%B8.jpg" alt=""></div>
                 <div class="col-lg-7 mission_text">
-                    <h4 class="fast_h">OUR MISSION, VISION AND VALUES</h4>
+                    <h4 class="fast_h">Директор</h4>
                     <p class="fast_p">For more than 130 years, Intertek’s story has always been about innovation. In 1885 we began testing and certifying grain cargoes before they were put to sea, and in 1888 we pioneered the idea of independent testing laboratories. Then in 1896, the greatest inventor of them all became part of our story. When Thomas Edison released the wonders of electricity and the light bulb he wanted to ensure that his products were checked, tested and safe. He established the Lamp Testing Bureau, later to </p>
                     <h4>Our Purpose</h4>
                     <p>Helping Canadians access affordable personal loans</p>
@@ -29,51 +29,32 @@ br
                     <p>We're committed to providing Canadians with fast cash loans between $1000 and $25,000 when they need it most1.</p>
                 </div>
             </div>
-            <div class="row our_vision">
-                <div class="col-12">
-                    <h4>Our Vision</h4>
-                    <p> Since starting our business in 2006, our 200+ branches have helped over 230,000 Canadians and counting. Helping Canadians access affordable personal loans</p>
-                </div>
-                <div class="col-md-6"><img src="{% static 'images/vision.jpg' %}" alt=""></div>
-                <div class="col-md-6"><img src="{% static 'images/vision-2.jpg' %}" alt=""></div>
-            </div>
+
+
             <div class="row conversation_area">
+
+                {% for person in persons %}
                 <div class="col-lg-4 col-md-6">
                     <div class="conversation">
                         <div class="conversation_img">
-                            <img src="{% static 'images/conversation-1.jpg' %}" alt="">
+                            {% if person.img %}
+
+
+                            <img src="{{ person.img.url }}" alt="">
+                                {% else %}
+                             <img src="{% static 'images/conversation-2.jpg' %}" alt="">
+                            {% endif %}
+
+
                         </div>
                         <div class="conversation_content">
-                            <a href="#">Emran Khan</a>
-                            <h6>Client Manager</h6>
-                            <p>Outline how you will measure performance against your goals</p>
+                            <a href="{% url 'about_detail' person.id %}">{{ person.firstname}} {{ person.name }} {{ person.last_name }}</a>
+                            <h6>{{ person.speciality }}</h6>
+                            <p>{{ person.tel }}</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="conversation">
-                        <div class="conversation_img">
-                            <img src="{% static 'images/conversation-2.jpg' %}" alt="">
-                        </div>
-                        <div class="conversation_content">
-                            <a href="#">Mahfuz Riad</a>
-                            <h6>Payment Manager</h6>
-                            <p>Outline how you will measure performance against your goals</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="conversation">
-                        <div class="conversation_img">
-                            <img src="{% static 'images/conversation-3.jpg' %}" alt="">
-                        </div>
-                        <div class="conversation_content">
-                            <a href="#">Kim o Bin</a>
-                            <h6>CTO</h6>
-                            <p>Outline how you will measure performance against your goals</p>
-                        </div>
-                    </div>
-                </div>
+                 {% endfor %}
             </div>
         </div>
     </section>

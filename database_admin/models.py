@@ -60,3 +60,13 @@ class Files(models.Model):
     class Meta:
         verbose_name= 'Файл'
         verbose_name_plural = 'Файлы'
+
+
+class Contact(models.Model):
+    name = models.CharField(max_length=200)
+    email = models.EmailField()
+    subject = models.CharField(max_length=200)
+    message = models.TextField()
+
+    def __str__(self):
+        return self.name

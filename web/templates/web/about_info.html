@@ -3,13 +3,11 @@
 {% block  content %}
 
     <!-- Pages Banner Area --> 
-    <section class="pages_banner" style="background: none">
+    <section class="pages_banner">
         <div class="container">
             <h2>Отдел качества обучeния и методического обеспечения</h2>
             <ol class="breadcrumb">
-                <li><a href="index.html"></a></li>
-                <li><a href="#"></a></li>
-                <li><a class="active"></a></li>
+
             </ol>
         </div>
     </section>
@@ -20,14 +18,13 @@
         <div class="container"> 
            <div class="row">
                <div class="col-lg-6">
-                   <h2>for Cryptocoin faq </h2>
                     <div class="faq_accordion">
                         <div class="item"> 
                             <a href="#" data-toggle="collapse" data-target="#faq1">How do I get started?</a> 
                             <div id="faq1" class="collapse show" data-parent=".faq_accordion"> 
                                <div class="accordion_content"> 
                                     <p>Simply register with your email and you are ready to go. Your account will guide you through the setup. For compliance reason we require information about your business or website, </p>
-                                    <img src="images/faq-1.jpg" alt="">
+                                    <img src="{% static 'images/faq-1.jpg' %}" alt="">
                                </div>
                             </div>
                         </div>
@@ -69,8 +66,7 @@
                         </div> 
                     </div>  
                </div>
-               <div class="col-lg-6"> 
-                   <h2>for our personal faq</h2>
+               <div class="col-lg-6">
                     <div class="faq_accordion fa_2"> 
                         <div class="item"> 
                             <a href="#" class="collapsed" data-toggle="collapse" data-target="#faq6">How Much Does It Cost To Join?</a> 

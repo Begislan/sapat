@@ -4,43 +4,38 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="{% static 'images/favicon.png' %}" type="image/x-icon"/>
+
+    <!-- Основные мета-данные -->
     <title>Сапат</title>
+    <meta name="description" content="Отдел качества обучeния и методического обеспечения">
+    <meta name="keywords" content="ошму, ошму сапат, ошгу окомо, ошгу, бегислан окомо">
 
-    <link href="{% static '/css/style.css' %}" rel="stylesheet">
+    <!-- Иконка сайта -->
+    <link rel="icon" href="{% static 'img/okomo.png' %}" type="image/x-icon"/>
+
+    <!-- Open Graph для социальных сетей -->
+    <meta property="og:title" content="Отдел качества обучeния и методического обеспечения">
+    <meta property="og:description" content="Отдел качества обучeния и методического обеспечения">
+    <meta property="og:image" content="{% static 'img/okomo.png' %}">
+    <meta property="og:url" content="https://ваш-сайт.ком">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card для Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Сапат">
+    <meta name="twitter:description" content="Описание страницы для Twitter.">
+    <meta name="twitter:image" content="{% static 'img/okomo.png' %}">
+
+    <!-- Стили -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
 </head>
-
-
-<!-- Header Top Area -->
-{#    <div class="header_top_area">#}
-{#        <div class="container">#}
-{#            <div class="header_top_inner row m-0">#}
-{#                <div class="right_menu col-lg-6 p-0">#}
-{#                    <ul class="right_nav">#}
-{#                        <li>Сапат </li>#}
-{#                        <li><a href="#" class="shop_btn"><i class="flaticon-shopper"></i> <span>0</span></a></li>#}
-{#                        <li class="dropdown search_dropbown">#}
-{#                            <a class="nav-link dropdown-toggle" href="" role="button" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-search"></i></a>#}
-{#                            <ul class="dropdown-menu">#}
-{#                                <li>#}
-{#                                    <input type="text" placeholder="Search..">#}
-{#                                    <span><i class="fa fa-search"></i></span>#}
-{#                                </li>#}
-{#                            </ul>#}
-{#                        </li>#}
-{#                    </ul>#}
-{#                </div>#}
-{#            </div>#}
-{#        </div>#}
-{#    </div>#}
-<!-- Header Top Area -->
 
 <!-- Header Area -->
 <header class="main_header_area">
     <div class="container">
         <div class="header_menu">
             <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand" href="{% url 'index' %}"><img src="{% static 'images/logo.png' %}" alt=""></a>
+                <a class="navbar-brand" href="{% url 'index' %}"><img width="40" src="{% static 'img/okomo.png' %}" alt=""></a>
                 <!-- Small Divice Menu-->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar_supported"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -69,40 +64,12 @@
                         <li class="dropdown">
                             <a class="nav-link dropdown-toggle" href="{% url 'news' %}" role="button"
                                aria-expanded="false">Новости</a>
-{#                            <ul class="dropdown-menu">#}
-{#                                <li class="dropdown">#}
-{#                                    <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown"#}
-{#                                       aria-expanded="false">Cases</a>#}
-{#                                    <ul class="dropdown-menu">#}
-{#                                        <li><a href="cases.html">Cases Version 1</a></li>#}
-{#                                        <li><a href="cases-2.html">Cases Version 2</a></li>#}
-{#                                        <li><a href="cases-3.html">Cases Version 3</a></li>#}
-{#                                        <li><a href="cases-details.html">Cases details</a></li>#}
-{#                                    </ul>#}
-{#                                </li>#}
-{#                                <li><a href="appointment.html">Appointment</a></li>#}
-{#                                <li><a href="team.html">Team</a></li>#}
-{#                                <li><a href="faq.html">faq</a></li>#}
-{#                                <li><a href="error.html">Error (404)</a></li>#}
-{#                            </ul>#}
                         </li>
-                        <li class="dropdown">
-                            <a class="nav-link dropdown-toggle" href="{% url 'news_detail' %}" role="button"
-                               aria-expanded="false">detailNews</a>
-{#                            <ul class="dropdown-menu">#}
-{#                                <li><a href="blog.html">Blog</a></li>#}
-{#                                <li><a href="blog-details.html">Blog details </a></li>#}
-{#                            </ul>#}
-                        </li>
+                       
                         <li class="dropdown">
                             <a class="nav-link dropdown-toggle" href="{% url 'contact' %}" role="button"
                                aria-expanded="false">Контакт</a>
-{#                            <ul class="dropdown-menu">#}
-{#                                <li><a href="contact.html">Contact us</a></li>#}
-{#                                <li><a href="contact-2.html">Contact us v2 </a></li>#}
-{#                            </ul>#}
                         </li>
-{#                        <li><a class="theme_btn" href="appointment.html">Appoinment</a></li>#}
                     </ul>
                 </div>
             </nav>
@@ -118,45 +85,42 @@
         <div class="container">
             <div class="footer_inner row">
                 <div class="col-lg-4 col-md-6 footer_logo">
-                    <a href="index.html"><img src="images/footer-logo.png" alt=""></a>
-                    <p>Over 20 years of experience we’ll ensure you always get the best guidance. </p>
-                    <a href="#" class="request_free"><i class="fa fa-arrow-right"></i>Request for Free Quote</a>
+                    <a href="index.html"><img src="{% static 'img/okomo.png' %}" alt="" width="300"></a>
                 </div>
                 <div class="footer_widget col-lg-3 col-md-6">
-                    <h4>Latest News</h4>
+                    <h4>Ссылки на другие сайты ОшГУ</h4>
                     <ul class="news_widget">
-                        <li><a href="blog.html">Business processes are ...</a><span>Novebmer 12, 2018</span></li>
-                        <li><a href="blog.html">Create your own financial ...</a><span>Novebmer 12, 2018</span></li>
-                        <li><a href="blog.html">3 Reasons Your Data...</a><span>Novebmer 12, 2018</span></li>
+                        <li><a href="blog.html">ОшГУ</a></li>
+                        <li><a href="blog.html">ОшГУ Компьютерный центр</a></li>
+                        <li><a href="blog.html">ОшГУ Видео обучение</a></li>
+                        <li><a href="blog.html">Электронный портфолио</a></li>
                     </ul>
                 </div>
                 <div class="footer_widget col-lg-2 col-md-6">
-                    <h4>Our Quick Focus</h4>
+                    <h4>Быстрые ссылки</h4>
                     <ul class="footer_nav">
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="services.html">Business Growth</a></li>
-                        <li><a href="services.html">Sustainability</a></li>
-                        <li><a href="services.html">Performance</a></li>
-                        <li><a href="services.html">Advertise</a></li>
+                        <li><a href="services.html">Главная</a></li>
+                        <li><a href="services.html">Состав</a></li>
+                        <li><a href="services.html">О нас</a></li>
+                        <li><a href="services.html">Новости</a></li>
+                        <li><a href="services.html">Контакт</a></li>
                         <li><a href="services.html">Careers</a></li>
                     </ul>
                 </div>
                 <div class="footer_widget col-lg-3 col-md-6 social_widget">
-                    <h4>Social Connection</h4>
+                    <h4>Мы на других соц. сетях</h4>
                     <ul class="footer_social">
                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#" class="pinterest"><i class="fa fa-pinterest"></i></a></li>
-                        <li><a href="#" class="google"><i class="fa fa-google"></i></a></li>
-                        <li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#" class="google"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#" class="google"><i class="fa fa-youtube"></i></a></li>
                     </ul>
-                    <h3><small>Contact us</small>+02 (0) 9292162</h3>
+                    <h3><small>Контакт</small>+996(770)000000</h3>
                 </div>
             </div>
         </div>
 
         <div class="copy_right">
-            <p>Copyright 2018, All Right Reserved, <a href="#">Template_mr</a></p>
+            <p>by <a href="#"> Bayastan uulu Begislan</a></p>
         </div>
     </footer>
     <!-- End Footer Area -->

@@ -1,5 +1,5 @@
 from django import forms
-from .models import Post, PostImage, Person
+from .models import Post, PostImage, Person, Contact
 from django.forms import modelformset_factory
 
 class PostForm(forms.ModelForm):
@@ -21,5 +21,9 @@ class PersonForm(forms.ModelForm):
         fields = '__all__'
 
 
+class ContactForm(forms.ModelForm):
+    class Meta:
+        model = Contact
+        fields = ['name', 'email', 'subject', 'message']
 
 

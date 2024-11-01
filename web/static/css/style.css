@@ -2583,6 +2583,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
 }
 .latest_news_area .latest_news .latest_news_img img {
   max-width: 100%;
+  object-fit: cover;
   transition: all 500ms linear 0s;
 }
 .latest_news_area .latest_news .latest_news_img span {
