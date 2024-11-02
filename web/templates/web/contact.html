@@ -14,8 +14,8 @@
     <!-- The About Area -->
     <section class="say_hello">
         <div class="container">
-            <h2>Say Hello</h2>
-            <p>We believe the best way deliver a great user experience is by deeply understanding what people want and love. Then deliver the features, messages, and content that are most helpful, relevant and timely. </p>
+            <h2>Контакт</h2>
+            <p>Оставьте свое мнение о сайте </p>
         </div>
     </section>
     <!-- End The About Area -->
@@ -27,7 +27,7 @@
     {% csrf_token %}
 
     <div class="form-group">
-        <input type="text" class="form-control" name="name" placeholder="Атыңыз" maxlength="200" required id="id_name">
+        <input type="text" class="form-control" name="name" placeholder="ФИО" maxlength="200" required id="id_name">
         {% if form.name.errors %}
             <div class="text-danger">{{ form.name.errors.0 }}</div>  <!-- Первое сообщение об ошибке -->
         {% endif %}
@@ -41,14 +41,14 @@
     </div>
 
     <div class="form-group">
-        <input type="text" class="form-control" name="subject" maxlength="200" required id="id_subject" placeholder="Субъект">
+        <input type="text" class="form-control" name="Заголовка" maxlength="200" required id="id_subject" placeholder="Субъект">
         {% if form.subject.errors %}
             <div class="text-danger">{{ form.subject.errors.0 }}</div>
         {% endif %}
     </div>
 
     <div class="form-group">
-        <textarea class="form-control" name="message" placeholder="Кабарлоо" required id="id_message" rows="5" style="resize: none;"></textarea>
+        <textarea class="form-control" name="message" placeholder="Сообшение" required id="id_message" rows="5" style="resize: none;"></textarea>
         {% if form.message.errors %}
             <div class="text-danger">{{ form.message.errors.0 }}</div>
         {% endif %}
@@ -59,7 +59,7 @@
     {% endif %}
 
     <div class="form-group m-0">
-        <button class="theme_btn btn" id="js-contact-btn" type="submit">Жөнөтүү</button>
+        <button class="theme_btn btn" id="js-contact-btn" type="submit">Отправить</button>
         <div id="js-contact-result" data-success-msg="Form submitted successfully." data-error-msg="Messages Successfully"></div>
     </div>
 </form>
@@ -74,20 +74,19 @@
             <div class="row">
                 <div class="col-md-6">
                     <address class="our_office">
-                        <span>Our Office</span><br>
-                        1600 Rosecrans Avenue <br>
-                        Manhattan Beach, CA 90266 <br>
-                        (02) 9292162 <br>
-                        <span>E-mail us: help02@gmail.com</span>
+                        <span>Отдел качества обучeния и методического обеспечения</span><br>
+                        Адрес	г. Ош улица Ленина 331<br>
+                        E-mail	qualityeducation@oshsu.kg<br>
+                        +996 553 434 304<br>
+
                     </address>
                 </div>
                 <div class="col-md-6">
                     <address class="our_office of_2">
-                        <span>Our Office</span><br>
-                        12/2 Rosecrans Avenue <br>
-                        Manhattan Beach, CA 90266 <br>
-                        +88 01912704287 <br>
-                        <span>E-mail us: help02@gmail.com</span>
+                        <span>Отдел качества обучeния и методического обеспечения</span><br>
+                        Адрес	г. Ош улица Ленина 331<br>
+                        E-mail	qualityeducation@oshsu.kg<br>
+                        +996 553 434 304<br>
                     </address>
                 </div>
             </div>

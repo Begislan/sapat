@@ -76,7 +76,7 @@
         </div>
     </div>
 </header>
-<!-- Header Area -->
+
 
 {% block content %}
 {% endblock %}
@@ -85,26 +85,26 @@
         <div class="container">
             <div class="footer_inner row">
                 <div class="col-lg-4 col-md-6 footer_logo">
-                    <a href="index.html"><img src="{% static 'img/okomo.png' %}" alt="" width="300"></a>
+                    <a href="{% url 'index' %}"><img src="{% static 'img/okomo.png' %}" alt="" width="300"></a>
                 </div>
                 <div class="footer_widget col-lg-3 col-md-6">
                     <h4>Ссылки на другие сайты ОшГУ</h4>
                     <ul class="news_widget">
-                        <li><a href="blog.html">ОшГУ</a></li>
-                        <li><a href="blog.html">ОшГУ Компьютерный центр</a></li>
-                        <li><a href="blog.html">ОшГУ Видео обучение</a></li>
-                        <li><a href="blog.html">Электронный портфолио</a></li>
+                        <li><a href="https://www.oshsu.kg/ru">ОшГУ</a></li>
+                        <li><a href="https://kb-learn.oshsu.kg/">ОшГУ Компьютерный центр</a></li>
+                        <li><a href="https://oku.oshsu.kg/">ОшГУ Видео обучение</a></li>
+                        <li><a href="https://begiportfolio.pythonanywhere.com/">Электронный портфолио</a></li>
                     </ul>
                 </div>
                 <div class="footer_widget col-lg-2 col-md-6">
                     <h4>Быстрые ссылки</h4>
                     <ul class="footer_nav">
-                        <li><a href="services.html">Главная</a></li>
-                        <li><a href="services.html">Состав</a></li>
-                        <li><a href="services.html">О нас</a></li>
-                        <li><a href="services.html">Новости</a></li>
-                        <li><a href="services.html">Контакт</a></li>
-                        <li><a href="services.html">Careers</a></li>
+                        <li><a href="{% url 'index' %}">Главная</a></li>
+                        <li><a href="{% url 'about' %}">Состав</a></li>
+                        <li><a href="{% url 'about_info' %}">О нас</a></li>
+                        <li><a href="{% url 'news' %}">Новости</a></li>
+                        <li><a href="{% url 'contact' %}">Контакт</a></li>
+
                     </ul>
                 </div>
                 <div class="footer_widget col-lg-3 col-md-6 social_widget">
@@ -114,13 +114,13 @@
                         <li><a href="#" class="google"><i class="fa fa-instagram"></i></a></li>
                         <li><a href="#" class="google"><i class="fa fa-youtube"></i></a></li>
                     </ul>
-                    <h3><small>Контакт</small>+996(770)000000</h3>
+                    <h3><small>Контакт</small>+996 (553) 434 304</h3>
                 </div>
             </div>
         </div>
 
         <div class="copy_right">
-            <p>by <a href="#"> Bayastan uulu Begislan</a></p>
+            <p>by <a href="https://api.whatsapp.com/send?phone=996774319355"> Bayastan uulu Begislan</a></p>
         </div>
     </footer>
     <!-- End Footer Area -->
