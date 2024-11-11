@@ -1,297 +1,241 @@
 {% extends 'web/base.html' %}
 {% block content %}
-    {% load static %}
-    <!-- Slider Area -->
-    <section class="main_slider_area">
-        <div id="main_slider" class="rev_slider" data-version="5.1.1RC">
-            <ul>
-                <li data-index="rs-1" data-transition="fade" data-slotamount="default" data-easein="default"
-                    data-easeout="default" data-masterspeed="2000" data-thumb="images/slider-1.jpg" data-rotate="0"
-                    data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"
-                    data-title="Business" data-description="">
-                    <img src="https://scontent.ffru2-1.fna.fbcdn.net/v/t1.6435-9/70370047_900008976999922_2034530573665435648_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEGdRMuTokdi3naNXLjJRDtS4FxRVzjbSBLgXFFXONtIHsGZE4HGDH7_tqQjp2OMl2TRGdPmVEJ9Uv53rLHGm1h&_nc_ohc=U6YOJNkWnxIQ7kNvgFiV_b9&_nc_zt=23&_nc_ht=scontent.ffru2-1.fna&_nc_gid=AXvOPiyTBC5SWa5GciFdvZX&oh=00_AYBxnYVl8E3kVOBJV56v7JUtA4IJK9lYpOY1fDRyqSpPQQ&oe=67406138"
-                         alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
-                         data-bgparallax="10" class="rev-slidebg" data-no-retina>
-                    <div class="tp-caption concept_title"
-                         id="slide-1-layer-1"
-                         data-x="['left','left','left','left']"
-                         data-hoffset="['0','0','0','15']"
-                         data-y="['top','top','top','top','top']"
-                         data-voffset="['320','320','170','140']"
-                         data-fontsize="['65','65','50','35','25']"
-                         data-lineheight="['67','67','67','50']"
-                         data-width="['none','none','none','485','350']"
-                         data-height="none"
-                         data-whitespace="['nowrap','nowrap','nowrap','normal']"
-                         data-transform_idle="o:1;"
-                         data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeOut;"
-                         data-transform_out="opacity:0;s:1000;s:1000;"
-                         data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
-                         data-start="1000"
-                         data-splitin="none"
-                         data-splitout="none"
-                         data-responsive_offset="on"
-                         style="z-index: 7; white-space: nowrap; text-align:left;text-shadow: 5px 5px 10px black;">
-                        Отдел качества обучeния
-                    </div>
-                    <div class="tp-caption concept_title"
-                         id="slide-1-layer-2"
-                         data-x="['left','left','left','left']"
-                         data-hoffset="['0','0','0','15']"
-                         data-y="['top','top','top','top']"
-                         data-voffset="['390','390','220','180']"
-                         data-fontsize="['65','65','50','35','25']"
-                         data-lineheight="['67','67','67','50']"
-                         data-width="['none','none','none','490','490']"
-                         data-height="none"
-                         data-whitespace="['nowrap','nowrap','nowrap','normal']"
-                         data-transform_idle="o:1;"
-                         data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeOut;"
-                         data-transform_out="opacity:0;s:1000;s:1000;"
-                         data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
-                         data-start="1300"
-                         data-splitin="none"
-                         data-splitout="none"
-                         data-responsive_offset="on"
-                         style="z-index: 7; white-space: nowrap; text-align:left;text-shadow: 5px 5px 10px black;">
-                        и методического обеспечения
-                    </div>
-                </li>
-                <li data-index="rs-2" data-transition="slideoverup" data-slotamount="7" data-easein="default"
-                    data-easeout="default" data-masterspeed="1000" data-thumb="images/slider-2.jpg"
-                    data-title="Event Video">
-                    <img src="https://oshsu.kg/storage/uploads/ds8vh65QLsY9cjpXpNmfQoU3BQCl7NnRk1GbIMiz.jpeg" alt=""
-                         data-lazyload="images/slider-2.jpg" data-bgposition="left center" data-kenburns="on"
-                         data-duration="30000" data-scalestart="110" data-scaleend="100" class="rev-slidebg"
-                         data-no-retina>
-                    <div class="tp-caption concept_title text-center"
-                         id="slide-2-layer-1"
-                         data-x="['center','center','center','center']"
-                         data-hoffset="['0','0','0','15']"
-                         data-y="['top','top','top','top','top']"
-                         data-voffset="['320','320','170','120']"
-                         data-fontsize="['60','60','50','35','25']"
-                         data-lineheight="['67','67','67','50']"
-                         data-width="['none','none','none','485','350']"
-                         data-height="none"
-                         data-whitespace="['nowrap','nowrap','nowrap','normal']"
-                         data-transform_idle="o:1;"
-                         data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeOut;"
-                         data-transform_out="opacity:0;s:1000;s:1000;"
-                         data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
-                         data-start="1000"
-                         data-splitin="none"
-                         data-splitout="none"
-                         data-responsive_offset="on"
-                         style="z-index: 7; white-space: nowrap;text-shadow: 5px 5px 10px black;">Отдел качества
-                        обучeния
-                    </div>
-                    <div class="tp-caption concept_title text-center"
-                         id="slide-2-layer-2"
-                         data-x="['center','center','center','center']"
-                         data-hoffset="['0','0','0','15']"
-                         data-y="['top','top','top','top']"
-                         data-voffset="['390','390','220','160']"
-                         data-fontsize="['60','60','50','35','25']"
-                         data-lineheight="['67','67','67','50']"
-                         data-width="['none','none','none','490','490']"
-                         data-height="none"
-                         data-whitespace="['nowrap','nowrap','nowrap','normal']"
-                         data-transform_idle="o:1;"
-                         data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeOut;"
-                         data-transform_out="opacity:0;s:1000;s:1000;"
-                         data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
-                         data-start="1300"
-                         data-splitin="none"
-                         data-splitout="none"
-                         data-responsive_offset="on"
-                         style="z-index: 7; white-space: nowrap; text-align:left;text-shadow: 5px 5px 10px black;">
-                        и методического обеспечения
-                    </div>
-                </li>
-                <li data-index="rs-3" data-transition="fade" data-slotamount="default" data-easein="default"
-                    data-easeout="default" data-masterspeed="2000" data-thumb="images/slider-1.jpg" data-rotate="0"
-                    data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"
-                    data-title="Business" data-description="">
-                    <img src="https://sputnik.kg/img/07e5/0a/08/1054164937_0:0:3068:2048_1440x900_80_0_1_4f26c19b07e6f5ccfc9d415a6f2ac462.jpg.webp?source-sid=SK_ES"
-                         alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
-                         data-bgparallax="10" class="rev-slidebg" data-no-retina>
-                    <div class="tp-caption concept_title"
-                         id="slide-3-layer-1"
-                         data-x="['right','right','right','right']"
-                         data-hoffset="['0','0','0','15']"
-                         data-y="['top','top','top','top','top']"
-                         data-voffset="['320','320','170','120']"
-                         data-fontsize="['65','65','50','35','25']"
-                         data-lineheight="['67','67','67','50']"
-                         data-width="['none','none','none','280','200']"
-                         data-height="none"
-                         data-whitespace="['nowrap','nowrap','nowrap','normal']"
-                         data-transform_idle="o:1;"
-                         data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeOut;"
-                         data-transform_out="opacity:0;s:1000;s:1000;"
-                         data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
-                         data-start="1000"
-                         data-splitin="none"
-                         data-splitout="none"
-                         data-responsive_offset="on"
-                         style="z-index: 7; white-space: nowrap; text-align:left; text-shadow: 5px 5px 10px black;">
-                        Отдел качества обучeния
-                    </div>
-                    <div class="tp-caption concept_title"
-                         id="slide-3-layer-2"
-                         data-x="['right','right','right','right']"
-                         data-hoffset="['0','0','0','15']"
-                         data-y="['top','top','top','top']"
-                         data-voffset="['390','390','220','160']"
-                         data-fontsize="['65','65','50','35','25']"
-                         data-lineheight="['67','67','67','50']"
-                         data-width="['none','none','none','480','345]"
-                         data-height="none"
-                         data-whitespace="['nowrap','nowrap','nowrap','normal']"
-                         data-transform_idle="o:1;"
-                         data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeOut;"
-                         data-transform_out="opacity:0;s:1000;s:1000;"
-                         data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
-                         data-start="1300"
-                         data-splitin="none"
-                         data-splitout="none"
-                         data-responsive_offset="on"
-                         style="z-index: 7; white-space: nowrap; text-align:left; text-shadow: 5px 5px 10px black;">
-                        и методического обеспечения
-                    </div>
-                </li>
-            </ul>
-        </div>
-        </li>
+{% load static %}
+<!-- Slider Area -->
+<section class="main_slider_area">
+    <div id="main_slider" class="rev_slider" data-version="5.1.1RC">
+        <ul>
+            <li data-index="rs-1" data-transition="fade" data-slotamount="default" data-easein="default"
+                data-easeout="default" data-masterspeed="2000" data-thumb="images/slider-1.jpg" data-rotate="0"
+                data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"
+                data-title="Business" data-description="">
+                <img src="https://scontent.ffru2-1.fna.fbcdn.net/v/t1.6435-9/70370047_900008976999922_2034530573665435648_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEGdRMuTokdi3naNXLjJRDtS4FxRVzjbSBLgXFFXONtIHsGZE4HGDH7_tqQjp2OMl2TRGdPmVEJ9Uv53rLHGm1h&_nc_ohc=U6YOJNkWnxIQ7kNvgFiV_b9&_nc_zt=23&_nc_ht=scontent.ffru2-1.fna&_nc_gid=AXvOPiyTBC5SWa5GciFdvZX&oh=00_AYBxnYVl8E3kVOBJV56v7JUtA4IJK9lYpOY1fDRyqSpPQQ&oe=67406138"
+                    alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
+                    data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                <div class="tp-caption concept_title" id="slide-1-layer-1" data-x="['left','left','left','left']"
+                    data-hoffset="['0','0','0','15']" data-y="['top','top','top','top','top']"
+                    data-voffset="['320','320','170','140']" data-fontsize="['65','65','50','35','25']"
+                    data-lineheight="['67','67','67','50']" data-width="['none','none','none','485','350']"
+                    data-height="none" data-whitespace="['nowrap','nowrap','nowrap','normal']"
+                    data-transform_idle="o:1;"
+                    data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeOut;"
+                    data-transform_out="opacity:0;s:1000;s:1000;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                    data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on"
+                    style="z-index: 7; white-space: nowrap; text-align:left;text-shadow: 5px 5px 10px black;">
+                    Отдел качества обучeния
+                </div>
+                <div class="tp-caption concept_title" id="slide-1-layer-2" data-x="['left','left','left','left']"
+                    data-hoffset="['0','0','0','15']" data-y="['top','top','top','top']"
+                    data-voffset="['390','390','220','180']" data-fontsize="['65','65','50','35','25']"
+                    data-lineheight="['67','67','67','50']" data-width="['none','none','none','490','490']"
+                    data-height="none" data-whitespace="['nowrap','nowrap','nowrap','normal']"
+                    data-transform_idle="o:1;"
+                    data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeOut;"
+                    data-transform_out="opacity:0;s:1000;s:1000;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                    data-start="1300" data-splitin="none" data-splitout="none" data-responsive_offset="on"
+                    style="z-index: 7; white-space: nowrap; text-align:left;text-shadow: 5px 5px 10px black;">
+                    и методического обеспечения
+                </div>
+            </li>
+            <li data-index="rs-2" data-transition="slideoverup" data-slotamount="7" data-easein="default"
+                data-easeout="default" data-masterspeed="1000" data-thumb="images/slider-2.jpg"
+                data-title="Event Video">
+                <img src="https://oshsu.kg/storage/uploads/ds8vh65QLsY9cjpXpNmfQoU3BQCl7NnRk1GbIMiz.jpeg" alt=""
+                    data-lazyload="images/slider-2.jpg" data-bgposition="left center" data-kenburns="on"
+                    data-duration="30000" data-scalestart="110" data-scaleend="100" class="rev-slidebg" data-no-retina>
+                <div class="tp-caption concept_title text-center" id="slide-2-layer-1"
+                    data-x="['center','center','center','center']" data-hoffset="['0','0','0','15']"
+                    data-y="['top','top','top','top','top']" data-voffset="['320','320','170','120']"
+                    data-fontsize="['60','60','50','35','25']" data-lineheight="['67','67','67','50']"
+                    data-width="['none','none','none','485','350']" data-height="none"
+                    data-whitespace="['nowrap','nowrap','nowrap','normal']" data-transform_idle="o:1;"
+                    data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeOut;"
+                    data-transform_out="opacity:0;s:1000;s:1000;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                    data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on"
+                    style="z-index: 7; white-space: nowrap;text-shadow: 5px 5px 10px black;">Отдел качества
+                    обучeния
+                </div>
+                <div class="tp-caption concept_title text-center" id="slide-2-layer-2"
+                    data-x="['center','center','center','center']" data-hoffset="['0','0','0','15']"
+                    data-y="['top','top','top','top']" data-voffset="['390','390','220','160']"
+                    data-fontsize="['60','60','50','35','25']" data-lineheight="['67','67','67','50']"
+                    data-width="['none','none','none','490','490']" data-height="none"
+                    data-whitespace="['nowrap','nowrap','nowrap','normal']" data-transform_idle="o:1;"
+                    data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeOut;"
+                    data-transform_out="opacity:0;s:1000;s:1000;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                    data-start="1300" data-splitin="none" data-splitout="none" data-responsive_offset="on"
+                    style="z-index: 7; white-space: nowrap; text-align:left;text-shadow: 5px 5px 10px black;">
+                    и методического обеспечения
+                </div>
+            </li>
+            <li data-index="rs-3" data-transition="fade" data-slotamount="default" data-easein="default"
+                data-easeout="default" data-masterspeed="2000" data-thumb="images/slider-1.jpg" data-rotate="0"
+                data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"
+                data-title="Business" data-description="">
+                <img src="https://sputnik.kg/img/07e5/0a/08/1054164937_0:0:3068:2048_1440x900_80_0_1_4f26c19b07e6f5ccfc9d415a6f2ac462.jpg.webp?source-sid=SK_ES"
+                    alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
+                    data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                <div class="tp-caption concept_title" id="slide-3-layer-1" data-x="['right','right','right','right']"
+                    data-hoffset="['0','0','0','15']" data-y="['top','top','top','top','top']"
+                    data-voffset="['320','320','170','120']" data-fontsize="['65','65','50','35','25']"
+                    data-lineheight="['67','67','67','50']" data-width="['none','none','none','280','200']"
+                    data-height="none" data-whitespace="['nowrap','nowrap','nowrap','normal']"
+                    data-transform_idle="o:1;"
+                    data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeOut;"
+                    data-transform_out="opacity:0;s:1000;s:1000;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                    data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on"
+                    style="z-index: 7; white-space: nowrap; text-align:left; text-shadow: 5px 5px 10px black;">
+                    Отдел качества обучeния
+                </div>
+                <div class="tp-caption concept_title" id="slide-3-layer-2" data-x="['right','right','right','right']"
+                    data-hoffset="['0','0','0','15']" data-y="['top','top','top','top']"
+                    data-voffset="['390','390','220','160']" data-fontsize="['65','65','50','35','25']"
+                    data-lineheight="['67','67','67','50']" data-width="['none','none','none','480','345]"
+                    data-height="none" data-whitespace="['nowrap','nowrap','nowrap','normal']"
+                    data-transform_idle="o:1;"
+                    data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeOut;"
+                    data-transform_out="opacity:0;s:1000;s:1000;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                    data-start="1300" data-splitin="none" data-splitout="none" data-responsive_offset="on"
+                    style="z-index: 7; white-space: nowrap; text-align:left; text-shadow: 5px 5px 10px black;">
+                    и методического обеспечения
+                </div>
+            </li>
         </ul>
-        <div class="tp-bannertimer tp-bottom"></div>
-        </div>
-    </section>
-    <!-- End Slider Area -->
+    </div>
+    </li>
+    </ul>
+    <div class="tp-bannertimer tp-bottom"></div>
+    </div>
+</section>
+<!-- End Slider Area -->
 
-    <!-- Marketting Investment  Area -->
-    <section class="marketting_investment">
-        <div class="marketting_feture">
-            <div class="investment">
-                <div class="row">
-                    <div class="col-md-6 marketting">
-                        <a href="#"><img src="" alt="">Marketting</a>
-                        <p>Consulting understands that to help meet client challenges</p>
-                    </div>
-                    <div class="col-md-6 marketting">
-                        <a href="#"><img src="" alt="">Investment</a>
-                        <p>Tax and pays Consulting understands that to help meet client challenges</p>
-                    </div>
-                    <div class="col-md-6 marketting">
-                        <a href="#"><img src="" alt="">Bank and Insurance</a>
-                        <p>Consulting understands that to help meet client challenges</p>
-                    </div>
-                    <div class="col-md-6 marketting">
-                        <a href="#"><img src="" alt="">Audit &amp; Evaluation
-                        </a>
-                        <p>Tax and pays Consulting understands that to help meet client challenges</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="marketting_img">
-            <img src="{% static  'img/colectiv.jpeg' %}" alt="">
-        </div>
-    </section>
-    <!-- End Marketting Investment  Area -->
-
-    <!-- Testimonial Area -->
-    <section class="testimonial">
-        <div class="container">
-            <div class="carousel slide testimonial_carousel" data-ride="carousel">
-                <h2>What our Client Says</h2>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <p>It goes without saying that customer data security and compliance is top of mind in most
-                            retail boardrooms. Barisal has built state-of-the-art security into our product, so you can
-                            take advantage of cutting-edge features designed to make protecting your users and business
-                            worry-free.</p>
-                        <img src="{% static 'images/testimonial.jpg' %}" alt="">
-                        <a href="#">Emran Khan</a>
-                        <h6>Web Developer</h6>
-                    </div>
-                    <div class="carousel-item">
-                        <p>It goes without saying that customer data security and compliance is top of mind in most
-                            retail boardrooms. Barisal has built state-of-the-art security into our product, so you can
-                            take advantage of cutting-edge features designed to make protecting your users and business
-                            worry-free.</p>
-                        <img src="{% static 'images/testimonial.jpg' %}" alt="">
-                        <a href="#">Mahfuz Riyad</a>
-                        <h6>Web designer</h6>
-                    </div>
-                    <div class="carousel-item">
-                        <p>It goes without saying that customer data security and compliance is top of mind in most
-                            retail boardrooms. Barisal has built state-of-the-art security into our product, so you can
-                            take advantage of cutting-edge features designed to make protecting your users and business
-                            worry-free.</p>
-                        <img src="{% static 'images/testimonial.jpg' %}" alt="">
-                        <a href="#">Foqrul Islam</a>
-                        <h6>SEO Themazine</h6>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End testimonial Area -->
-
-    <!-- Careers Area -->
-    <section class="careers_area">
-        <div class="careers_content">
-            <div class="careers_text">
-                <h2>Карьера</h2>
-                <h3>Don’t just come to work. Come to change</h3>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="careers_button">
-                            <a href="{% url 'about_info' %}" class="theme_btn">Толук окуу</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="careers_img">
-            <img src="{% static 'img/colectiv3.jpeg' %}" alt="">
-        </div>
-    </section>
-    <!-- End Careers Area -->
-
-    <!-- Our latest news Area -->
-    <section class="latest_news_area">
-        <div class="container">
-            <div class="tittle">
-                <h2>Наши последние новости</h2>
-                <p>Finance Solutions — это программное обеспечение последнего поколения от Sigma Data &amp; Computers
-                    Ltd, разработанное для управления и организации ваших банковских операций.</p>
-                <a href="{% url 'news' %}" class="theme_btn">Загрузить больше</a>
-            </div>
+<!-- Marketting Investment  Area -->
+<section class="marketting_investment">
+    <div class="marketting_feture">
+        <div class="investment">
             <div class="row">
-                {% for item in posts_with_images %}
-                    <div class="col-lg-4 col-md-6">
-                        <div class="latest_news">
-                            <a href="{% url 'news_detail' item.post.id %}"
-                               class="b_tittle">{{ item.post.title|truncatechars:50 }}</a>
-                            <a href="{% url 'news_detail' item.post.id %}" class="latest_news_img">
-                                <span>{{ item.post.created_at|date:"d M Y" }}</span>
-                                {% if item.image %}
-                                    <img src="{{ item.image }}" alt="">
-                                {% else %}
-                                    <img src="{% static 'img/default_image.jpg' %}" alt="">
-                                {% endif %}
-                            </a>
-                        </div>
-                    </div>
-                {% endfor %}
+                <div class="col-md-6 marketting">
+                    <a href="{% url 'about_info' %}">Личностное развитие и рост</a>
+                    <p>Преподавание требует глубоких знаний, гибкости и терпения. Этот процесс часто стимулирует личное
+                        развитие, так как учитель постоянно учится у своих учеников и коллег.</p>
+                </div>
+                <div class="col-md-6 marketting">
+                    <a href="{% url 'about_info' %}">Влияние на общество</a>
+                    <p>Учителя играют ключевую роль в формировании будущего поколения, помогая детям развивать навыки,
+                        критическое мышление и уверенность в себе.</p>
+                </div>
+                <div class="col-md-6 marketting">
+                    <a href="{% url 'about_info' %}">Профессиональная стабильность</a>
+                    <p>В большинстве стран преподавание является стабильной профессией, и на преподавателей всегда
+                        существует спрос</p>
+                </div>
+                <div class="col-md-6 marketting">
+                    <a href="{% url 'about_info' %}">Постоянное обучение
+                    </a>
+                    <p>Мир знаний постоянно развивается, и преподаватели всегда находятся в процессе самообучения, будь
+                        то освоение новых технологий, методов обучения или изучение новых предметов.</p>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
+    <div class="marketting_img">
+        <img src="{% static  'img/colectiv.jpeg' %}" alt="">
+    </div>
+</section>
+<!-- End Marketting Investment  Area -->
 
-    <!-- End Our latest news Area -->
+<!-- Testimonial Area -->
+<section class="testimonial">
+    <div class="container">
+        <div class="carousel slide testimonial_carousel" data-ride="carousel">
+            <h2>Мнения о сайте</h2>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <p>Сайттын түзүүчүсү катары айтсам, сайт жаңы технологияларкы камтып, сизге керектүү мааылматты
+                        издөөдө кыйынчылык жаратпайт</p>
+                    <img style="object-fit: cover;"
+                        src="http://127.0.0.1:8000/media/images/Screenshot_20230411-101151_Plus.jpg" alt="">
+                    <a href="#">Баястан уулу Бегислан</a>
+                    <h6>Веб разработчик</h6>
+                </div>
+                <div class="carousel-item">
+                    <p>It goes without saying that customer data security and compliance is top of mind in most
+                        retail boardrooms. Barisal has built state-of-the-art security into our product, so you can
+                        take advantage of cutting-edge features designed to make protecting your users and business
+                        worry-free.</p>
+                    <img src="{% static 'images/testimonial.jpg' %}" alt="">
+                    <a href="#">Mahfuz Riyad</a>
+                    <h6>Web designer</h6>
+                </div>
+                <div class="carousel-item">
+                    <p>It goes without saying that customer data security and compliance is top of mind in most
+                        retail boardrooms. Barisal has built state-of-the-art security into our product, so you can
+                        take advantage of cutting-edge features designed to make protecting your users and business
+                        worry-free.</p>
+                    <img src="{% static 'images/testimonial.jpg' %}" alt="">
+                    <a href="#">Foqrul Islam</a>
+                    <h6>SEO Themazine</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End testimonial Area -->
+
+<!-- Careers Area -->
+<section class="careers_area">
+    <div class="careers_content">
+        <div class="careers_text">
+            <h2>Карьера</h2>
+            <h3 style="font-size: 20px;">
+                Карьера в преподавании – это захватывающий и многогранный путь, который дает возможность не только
+                передавать знания, но и влиять на жизнь и будущее учеников.
+            </h3>
+            <div class="row">
+                <div class="col-12">
+                    <div class="careers_button">
+                        <a href="{% url 'about_info' %}" class="theme_btn">Толук окуу</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="careers_img">
+        <img src="{% static 'img/colectiv3.jpeg' %}" alt="">
+    </div>
+</section>
+<!-- End Careers Area -->
+
+<!-- Our latest news Area -->
+<section class="latest_news_area">
+    <div class="container">
+        <div class="tittle">
+            <h2>Наши последние новости</h2>
+            <p>В этом странице вы найдете последние посты об отделе</p>
+            <a href="{% url 'news' %}" class="theme_btn">Загрузить больше</a>
+        </div>
+        <div class="row">
+            {% for item in posts_with_images %}
+            <div class="col-lg-4 col-md-6">
+                <div class="latest_news">
+                    <a href="{% url 'news_detail' item.post.id %}" class="b_tittle">
+                        {{ item.post.title|truncatechars:50}}</a>
+                    <a href="{% url 'news_detail' item.post.id %}" class="latest_news_img">
+                        <span>{{ item.post.created_at|date:"d M Y" }}</span>
+                        {% if item.image %}
+                        <img src="{{ item.image }}" alt="">
+                        {% else %}
+                        <img src="{% static 'img/default_image.jpg' %}" alt="">
+                        {% endif %}
+                    </a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- End Our latest news Area -->
 
 
 

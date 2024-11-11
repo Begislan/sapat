@@ -2,7 +2,7 @@ from django.urls import path
 from .views import (admin_core, create_post, success_create,
                     all_posts, post_detail, edit_post,
                     delete_post, persons, person_detail,
-                    edit_person, delete_person, create_person
+                    edit_person, delete_person, create_person, view_contacts,
                     )
 
 urlpatterns = [
@@ -22,5 +22,9 @@ urlpatterns = [
     path('persons/<int:person_id>/', person_detail, name='person_detail'),
     path('persons/<int:person_id>/edit/', edit_person, name='edit_person'),
     path('persons/<int:person_id>/delete/', delete_person, name='delete_person'),
+
+
+    #feedback
+    path('feedback', view_contacts, name='feedback'),
 
 ]

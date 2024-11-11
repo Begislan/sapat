@@ -1,0 +1,18 @@
+{% extends 'adminka_post/base_adminka.html' %}
+
+{% block title %}Админка{% endblock %}
+
+{% block content %}
+
+    {% for feedbak in feedbacks %}
+    	{{ feedbak.name }}
+    	{{ feedbak.email }}
+    	{{ feedbak.subjects }}
+    	{{ feedbak.message }}
+        <hr>
+    {% endfor %}
+
+
+
+
+{% endblock %}

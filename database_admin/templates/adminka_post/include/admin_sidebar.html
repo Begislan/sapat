@@ -37,6 +37,16 @@
             </a>
         </li>
 
+       <li class="nav-item">
+            <a href="{% url 'feedback' %}"
+               class="nav-link  {% if request.resolver_match.url_name == 'feedback' %}active text-white{% endif %}">
+                <svg class="bi pe-none me-2" width="16" height="16">
+                    <use xlink:href="#speedometer2"></use>
+                </svg>
+                Отзыв
+            </a>
+        </li>
+
     </ul>
     <hr>
     <div class="dropdown">
